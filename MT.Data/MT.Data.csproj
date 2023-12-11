@@ -1,0 +1,382 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{959A85CB-DE99-41C4-BEC6-665199750055}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MT.Data</RootNamespace>
+    <AssemblyName>MT.Data</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FlexCel">
+      <HintPath>..\Library\FlexCel.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ValueTuple.4.5.0\lib\net461\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BO\ArgumentImport.cs" />
+    <Compile Include="BO\DM_PickList.cs" />
+    <Compile Include="BO\LK_MaVach_MLL.cs" />
+    <Compile Include="BO\LK_MaVach_TinhTrangHongHoc.cs" />
+    <Compile Include="BO\Resources.cs" />
+    <Compile Include="BO\DBOption.cs" />
+    <Compile Include="BO\BackupHistory.cs" />
+    <Compile Include="BO\LK_MaVach_CTS.cs" />
+    <Compile Include="BO\AuditingLog.cs" />
+    <Compile Include="BO\CanCuPhieu.cs" />
+    <Compile Include="BO\ChangedData.cs" />
+    <Compile Include="BO\ColumnMatchWhenImportExcel.cs" />
+    <Compile Include="BO\ConfigDashBoard.cs" />
+    <Compile Include="BO\ConfigExcel.cs" />
+    <Compile Include="BO\ConfigImportMapping.cs" />
+    <Compile Include="BO\ConfigReport.cs" />
+    <Compile Include="BO\DeleteObject.cs" />
+    <Compile Include="BO\DM_CanBo.cs" />
+    <Compile Include="BO\DM_ChucVu.cs" />
+    <Compile Include="BO\DM_ChungThuSo.cs" />
+    <Compile Include="BO\DM_NoiDungBaoHanh.cs" />
+    <Compile Include="BO\DM_TinhTrangPhuKien.cs" />
+    <Compile Include="BO\DuLieuGanNhatTrenForm.cs" />
+    <Compile Include="BO\DM_HinhThucLCNT.cs" />
+    <Compile Include="BO\DM_Kho.cs" />
+    <Compile Include="BO\DM_HangMucBaoDam.cs" />
+    <Compile Include="BO\DM_LoaiDonVi.cs" />
+    <Compile Include="BO\DM_MangLienLac.cs" />
+    <Compile Include="BO\DM_NguonVon.cs" />
+    <Compile Include="BO\DM_NoiDungCaiDat.cs" />
+    <Compile Include="BO\DM_NoiDungSuaChua.cs" />
+    <Compile Include="BO\DM_PhuKien.cs" />
+    <Compile Include="BO\DM_SanPham.cs" />
+    <Compile Include="BO\DM_NhomSanPham.cs" />
+    <Compile Include="BO\DM_DonViTinh.cs" />
+    <Compile Include="BO\DM_NhaCC.cs" />
+    <Compile Include="BO\DM_ThamSoMatMa.cs" />
+    <Compile Include="BO\DM_TinhTrangHongHoc.cs" />
+    <Compile Include="BO\EmployeeAccessLevel.cs" />
+    <Compile Include="BO\HeaderTable.cs" />
+    <Compile Include="BO\ImportResult.cs" />
+    <Compile Include="BO\IncurrentData.cs" />
+    <Compile Include="BO\KH_BaoHanhSanPham.cs" />
+    <Compile Include="BO\KH_BaoHanhSanPham_CT.cs" />
+    <Compile Include="BO\KH_BaoHanhSanPham_CT_PhuKien.cs" />
+    <Compile Include="BO\KH_CaiDatSanPham.cs" />
+    <Compile Include="BO\KH_CaiDatSanPham_CT.cs" />
+    <Compile Include="BO\KH_CaiDatSanPham_CT_PhuKien.cs" />
+    <Compile Include="BO\KH_XuatTHTH.cs" />
+    <Compile Include="BO\KH_XuatTHTH_CT.cs" />
+    <Compile Include="BO\KH_XuatTHTH_CT_PhuKien.cs" />
+    <Compile Include="BO\MTCell.cs" />
+    <Compile Include="BO\MTParameter.cs" />
+    <Compile Include="BO\Phieu_NhapBaoHanhSanPham.cs" />
+    <Compile Include="BO\Phieu_NhapBaoHanhSanPham_CT.cs" />
+    <Compile Include="BO\Phieu_NhapBaoHanhSanPham_CT_PhuKien.cs" />
+    <Compile Include="BO\Phieu_NhapCaiDatSanPham.cs" />
+    <Compile Include="BO\Phieu_NhapCaiDatSanPham_CT.cs" />
+    <Compile Include="BO\Phieu_NhapCaiDatSanPham_CT_PhuKien.cs" />
+    <Compile Include="BO\Phieu_NhapSuaChuaSanPham.cs" />
+    <Compile Include="BO\Phieu_NhapSuaChuaSanPham_CT.cs" />
+    <Compile Include="BO\Phieu_NhapSuaChuaSanPham_CT_PhuKien.cs" />
+    <Compile Include="BO\Phieu_NhapTHTH.cs" />
+    <Compile Include="BO\Phieu_NhapTHTH_CT.cs" />
+    <Compile Include="BO\Phieu_NhapTHTH_CT_PhuKien.cs" />
+    <Compile Include="BO\Phieu_XuatBaoHanhSanPham.cs" />
+    <Compile Include="BO\Phieu_XuatBaoHanhSanPham_CT.cs" />
+    <Compile Include="BO\Phieu_XuatBaoHanhSanPham_CT_PhuKien.cs" />
+    <Compile Include="BO\Phieu_XuatCaiDatSanPham.cs" />
+    <Compile Include="BO\Phieu_XuatCaiDatSanPham_CT.cs" />
+    <Compile Include="BO\Phieu_XuatCaiDatSanPham_CT_PhuKien.cs" />
+    <Compile Include="BO\KH_SuaChuaSanPham.cs" />
+    <Compile Include="BO\KH_SuaChuaSanPham_CT.cs" />
+    <Compile Include="BO\KH_SuaChuaSanPham_CT_PhuKien.cs" />
+    <Compile Include="BO\KH_XuatChoMuon.cs" />
+    <Compile Include="BO\KH_XuatChoMuon_CT.cs" />
+    <Compile Include="BO\KH_XuatChoMuon_CT_PhuKien.cs" />
+    <Compile Include="BO\KH_XuatMuonTra.cs" />
+    <Compile Include="BO\KH_XuatMuonTra_CT.cs" />
+    <Compile Include="BO\KH_XuatMuonTra_CT_PhuKien.cs" />
+    <Compile Include="BO\Phieu_NhapMuonTra.cs" />
+    <Compile Include="BO\Phieu_NhapMuonTra_CT.cs" />
+    <Compile Include="BO\Phieu_NhapMuonTra_CT_PhuKien.cs" />
+    <Compile Include="BO\Phieu_NhapSanPham.cs" />
+    <Compile Include="BO\Phieu_XuatMuonTra.cs" />
+    <Compile Include="BO\Phieu_XuatMuonTra_CT.cs" />
+    <Compile Include="BO\Phieu_XuatMuonTra_CT_PhuKien.cs" />
+    <Compile Include="BO\Phieu_XuatSanPham.cs" />
+    <Compile Include="BO\KH_XuatBaoDam.cs" />
+    <Compile Include="BO\Phieu_NhapSanPham_CT.cs" />
+    <Compile Include="BO\Phieu_XuatSanPham_CT.cs" />
+    <Compile Include="BO\KH_XuatBaoDam_CT.cs" />
+    <Compile Include="BO\Phieu_NhapSanPham_CT_PhuKien.cs" />
+    <Compile Include="BO\Phieu_XuatSanPham_CT_PhuKien.cs" />
+    <Compile Include="BO\KH_XuatBaoDam_CT_PhuKien.cs" />
+    <Compile Include="BO\KH_NhapSanPhamMoi.cs" />
+    <Compile Include="BO\Phieu_NhapSanPhamMoi_CT_PhuKien.cs" />
+    <Compile Include="BO\Phieu_NhapSanPhamMoi_CT.cs" />
+    <Compile Include="BO\KH_NhapSanPhamMoi_CT.cs" />
+    <Compile Include="BO\KH_NhapSanPhamMoi_CT_PhuKien.cs" />
+    <Compile Include="BO\KH_XuatSanPham.cs" />
+    <Compile Include="BO\KH_XuatSanPham_CT.cs" />
+    <Compile Include="BO\KH_XuatSanPham_CT_PhuKien.cs" />
+    <Compile Include="BO\NHATKY.cs" />
+    <Compile Include="BO\Phieu_NhapSanPhamMoi.cs" />
+    <Compile Include="BO\Phieu_XuatSuaChuaSanPham.cs" />
+    <Compile Include="BO\Phieu_XuatSuaChuaSanPham_CT.cs" />
+    <Compile Include="BO\Phieu_XuatSuaChuaSanPham_CT_PhuKien.cs" />
+    <Compile Include="BO\Phieu_XuatTHTH.cs" />
+    <Compile Include="BO\Phieu_XuatTHTH_CT .cs" />
+    <Compile Include="BO\Phieu_XuatTHTH_CT_PhuKien.cs" />
+    <Compile Include="BO\ReportData.cs" />
+    <Compile Include="BO\ResultExcelFile.cs" />
+    <Compile Include="BO\ResultPaging.cs" />
+    <Compile Include="BO\Sequence.cs" />
+    <Compile Include="BO\SequenceVoucher.cs" />
+    <Compile Include="BO\SinhMaVach.cs" />
+    <Compile Include="BO\SoKho.cs" />
+    <Compile Include="BO\SoKhoViewModel.cs" />
+    <Compile Include="BO\SortOrderExportData.cs" />
+    <Compile Include="BO\SysMenu.cs" />
+    <Compile Include="BO\SysRole.cs" />
+    <Compile Include="BO\DM_DonVi.cs" />
+    <Compile Include="BO\SysUser.cs" />
+    <Compile Include="BO\TepDinhKem.cs" />
+    <Compile Include="BO\TonKhoViewModel.cs" />
+    <Compile Include="BO\TransferData.cs" />
+    <Compile Include="Rep\Business\TepDinhKemRepository.cs" />
+    <Compile Include="Rep\Dictionary\DM_PickListRepository.cs" />
+    <Compile Include="Rep\Import\ImportSoKhoRepository.cs" />
+    <Compile Include="Rep\Report\SinhMaVachCaoRepository.cs" />
+    <Compile Include="Rep\Report\TimKiemHangHoaNangCaoRepository.cs" />
+    <Compile Include="Rep\SysDateTime.cs" />
+    <Compile Include="SysVariables.cs" />
+    <Compile Include="DBContext.cs" />
+    <Compile Include="Constant.cs" />
+    <Compile Include="EnumModels.cs" />
+    <Compile Include="EnumResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EnumResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="FactoryReport.cs" />
+    <Compile Include="FormUIHandle.cs" />
+    <Compile Include="ExchangeData\ManagementData.cs" />
+    <Compile Include="Rep\BaseReportRepository.cs" />
+    <Compile Include="Rep\Business\LK_MaVach_CTSRepository.cs" />
+    <Compile Include="Rep\Business\KH_BaoHanhSanPhamRepository.cs" />
+    <Compile Include="Rep\Business\KH_BaoHanhSanPham_CTRepository.cs" />
+    <Compile Include="Rep\Business\KH_BaoHanhSanPham_CT_PhuKienRepository.cs" />
+    <Compile Include="Rep\Business\KH_CaiDatSanPham_CT_PhuKienRepository.cs" />
+    <Compile Include="Rep\Business\KH_SuaChuaSanPham_CT_PhuKienRepository.cs" />
+    <Compile Include="Rep\Business\KH_XuatBaoDam_CT_PhuKienRepository.cs" />
+    <Compile Include="Rep\Business\KH_NhapSanPhamMoi_CT_PhuKienRepository.cs" />
+    <Compile Include="Rep\Business\KH_SuaChuaSanPhamRepository.cs" />
+    <Compile Include="Rep\Business\KH_SuaChuaSanPham_CTRepository.cs" />
+    <Compile Include="Rep\Business\KH_XuatChoMuonRepository.cs" />
+    <Compile Include="Rep\Business\KH_XuatChoMuon_CTRepository.cs" />
+    <Compile Include="Rep\Business\KH_XuatChoMuon_CT_PhuKienRepository.cs" />
+    <Compile Include="Rep\Business\KH_XuatMuonTraRepository.cs" />
+    <Compile Include="Rep\Business\KH_XuatMuonTra_CTRepository.cs" />
+    <Compile Include="Rep\Business\KH_XuatMuonTra_CT_PhuKienRepository.cs" />
+    <Compile Include="Rep\Business\KH_CaiDatSanPham_CTRepository.cs" />
+    <Compile Include="Rep\Business\CanCuPhieuRepository.cs" />
+    <Compile Include="Rep\Business\KH_XuatTHTHRepository.cs" />
+    <Compile Include="Rep\Business\KH_XuatTHTH_CTRepository.cs" />
+    <Compile Include="Rep\Business\KH_XuatTHTH_CT_PhuKienRepository.cs" />
+    <Compile Include="Rep\Business\LK_MaVach_MLLRepository.cs" />
+    <Compile Include="Rep\Business\LK_MaVach_TinhTrangHongHocRepository.cs" />
+    <Compile Include="Rep\Business\Phieu_NhapBaoHanhSanPhamRepository.cs" />
+    <Compile Include="Rep\Business\Phieu_NhapBaoHanhSanPham_CTRepository.cs" />
+    <Compile Include="Rep\Business\Phieu_NhapBaoHanhSanPham_CT_PhuKienRepository.cs" />
+    <Compile Include="Rep\Business\Phieu_NhapCaiDatSanPham_CT_PhuKienRepository.cs" />
+    <Compile Include="Rep\Business\Phieu_NhapMuonTraRepository.cs" />
+    <Compile Include="Rep\Business\Phieu_NhapMuonTra_CTRepository.cs" />
+    <Compile Include="Rep\Business\Phieu_NhapMuonTra_CT_PhuKienRepository.cs" />
+    <Compile Include="Rep\Business\KH_CaiDatSanPhamRepository.cs" />
+    <Compile Include="Rep\Business\Phieu_NhapCaiDatSanPhamRepository.cs" />
+    <Compile Include="Rep\Business\Phieu_NhapSuaChuaSanPhamRepository.cs" />
+    <Compile Include="Rep\Business\Phieu_NhapSuaChuaSanPham_CTRepository.cs" />
+    <Compile Include="Rep\Business\Phieu_NhapSuaChuaSanPham_CT_PhuKienRepository.cs" />
+    <Compile Include="Rep\Business\Phieu_NhapTHTHRepository.cs" />
+    <Compile Include="Rep\Business\Phieu_NhapTHTH_CTRepository.cs" />
+    <Compile Include="Rep\Business\Phieu_NhapTHTH_CT_PhuKienRepository.cs" />
+    <Compile Include="Rep\Business\Phieu_XuatBaoHanhSanPhamRepository.cs" />
+    <Compile Include="Rep\Business\Phieu_XuatBaoHanhSanPham_CTRepository.cs" />
+    <Compile Include="Rep\Business\Phieu_XuatBaoHanhSanPham_CT_PhuKienRepository.cs" />
+    <Compile Include="Rep\Business\Phieu_XuatCaiDatSanPhamRepository.cs" />
+    <Compile Include="Rep\Business\Phieu_XuatCaiDatSanPham_CTRepository.cs" />
+    <Compile Include="Rep\Business\Phieu_XuatCaiDatSanPham_CT_PhuKienRepository.cs" />
+    <Compile Include="Rep\Business\Phieu_NhapCaiDatSanPham_CTRepository.cs" />
+    <Compile Include="Rep\Business\Phieu_XuatMuonTraRepository.cs" />
+    <Compile Include="Rep\Business\Phieu_XuatMuonTra_CTRepository.cs" />
+    <Compile Include="Rep\Business\Phieu_XuatMuonTra_CT_PhuKienRepository.cs" />
+    <Compile Include="Rep\Business\Phieu_XuatSuaChuaSanPhamRepository.cs" />
+    <Compile Include="Rep\Business\Phieu_XuatSuaChuaSanPham_CTRepository.cs" />
+    <Compile Include="Rep\Business\Phieu_XuatSuaChuaSanPham_CT_PhuKienRepository.cs" />
+    <Compile Include="Rep\Business\Phieu_XuatTHTHRepository.cs" />
+    <Compile Include="Rep\Business\Phieu_XuatTHTH_CTRepository.cs" />
+    <Compile Include="Rep\Business\Phieu_XuatTHTH_CT_PhuKienRepository.cs" />
+    <Compile Include="Rep\Business\SoKhoRepository.cs" />
+    <Compile Include="Rep\Business\Phieu_XuatBaoDam_CT_PhuKienRepository.cs" />
+    <Compile Include="Rep\Business\Phieu_XuatSanPhamRepository.cs" />
+    <Compile Include="Rep\Business\KH_XuatBaoDamRepository.cs" />
+    <Compile Include="Rep\Business\KH_XuatSanPhamRepository.cs" />
+    <Compile Include="Rep\Business\KH_XuatBaoDam_CTRepository.cs" />
+    <Compile Include="Rep\Business\KH_XuatSanPham_CTRepository.cs" />
+    <Compile Include="Rep\Business\Phieu_NhapSanPhamMoi_CTRepository.cs" />
+    <Compile Include="Rep\Business\Phieu_NhapSanPhamMoi_CT_PhuKienRepository.cs" />
+    <Compile Include="Rep\Business\Phieu_NhapSanPhamRepository.cs" />
+    <Compile Include="Rep\Business\KH_NhapSanPhamMoiRepository.cs" />
+    <Compile Include="Rep\Business\Phieu_NhapSanPham_CT_PhuKienRepository.cs" />
+    <Compile Include="Rep\Business\Phieu_NhapSanPham_CTRepository.cs" />
+    <Compile Include="Rep\Business\Phieu_NhapSanPhamMoiRepository.cs" />
+    <Compile Include="Rep\Business\KH_NhapSanPhamMoi_CTRepository.cs" />
+    <Compile Include="Rep\Business\Phieu_XuatSanPham_CTRepository.cs" />
+    <Compile Include="Rep\Business\Phieu_XuatSanPham_CT_PhuKienRepository.cs" />
+    <Compile Include="Rep\Business\SoKhoRepository.cs" />
+    <Compile Include="Rep\Dictionary\DM_ChungThuSoRepository.cs" />
+    <Compile Include="Rep\IBaseImportRepository.cs" />
+    <Compile Include="Rep\ImportBaseRepository.cs" />
+    <Compile Include="Rep\Report\XuatKhau_KH_NhapSanPhamMoiRepository.cs" />
+    <Compile Include="Rep\Sys\DBOptionRepository.cs" />
+    <Compile Include="Rep\Sys\BackupHistoryRepository.cs" />
+    <Compile Include="Rep\Sys\EmployeeAccessLevelRepository.cs" />
+    <Compile Include="Rep\UdFlexCell\UdFormat.cs" />
+    <Compile Include="Rep\Dictionary\DM_LoaiDonViRepository.cs" />
+    <Compile Include="Rep\Dictionary\DM_CanBoRepository.cs" />
+    <Compile Include="Rep\Dictionary\DM_HangMucBaoDamRepository.cs" />
+    <Compile Include="Rep\Dictionary\DM_KhoRepository.cs" />
+    <Compile Include="Rep\Dictionary\DM_LoaiDonViRepository.cs" />
+    <Compile Include="Rep\Dictionary\DM_NguonVonRepository.cs" />
+    <Compile Include="Rep\Dictionary\DM_HinhThucLCNTRepository.cs" />
+    <Compile Include="Rep\Dictionary\DM_ChucVuRepository.cs" />
+    <Compile Include="Rep\Dictionary\DM_MangLienLacRepository.cs" />
+    <Compile Include="Rep\Dictionary\DM_NhomSanPhamRepository.cs" />
+    <Compile Include="Rep\Dictionary\DM_DonViTinhRepository.cs" />
+    <Compile Include="Rep\Dictionary\DM_NoiDungBaoHanhRepository.cs" />
+    <Compile Include="Rep\Dictionary\DM_NoiDungCaiDatRepository.cs" />
+    <Compile Include="Rep\Dictionary\DM_NoiDungSuaChuaRepository.cs" />
+    <Compile Include="Rep\Dictionary\DM_PhuKienRepository.cs" />
+    <Compile Include="Rep\Dictionary\DM_SanPhamRepository.cs" />
+    <Compile Include="Rep\Dictionary\DM_NhaCCRepository.cs" />
+    <Compile Include="Rep\Dictionary\DM_DonViRepository.cs" />
+    <Compile Include="Rep\Dictionary\DM_ThamSoMatMaRepository.cs" />
+    <Compile Include="Rep\Dictionary\DM_TinhTrangHongHocRepository.cs" />
+    <Compile Include="Rep\IBaseReportRepository.cs" />
+    <Compile Include="Rep\Print\Print_KHNhapSPMM_DetailRepository.cs" />
+    <Compile Include="Rep\Print\Print_KH_BaoHanhSanPham_DetailRepository.cs" />
+    <Compile Include="Rep\Print\Print_KH_CaiDatSanPham_DetailRepository.cs" />
+    <Compile Include="Rep\Print\Print_KH_SuaChuaSanPham_DetailRepository.cs" />
+    <Compile Include="Rep\Print\Print_KH_XuatBaoDam_DetailRepository.cs" />
+    <Compile Include="Rep\Print\Print_KH_XuatMuonTra_DetailRepository.cs" />
+    <Compile Include="Rep\Print\Print_KH_XuatSanPham_DetailRepository.cs" />
+    <Compile Include="Rep\Print\Print_KH_XuatTHTH_DetailRepository.cs" />
+    <Compile Include="Rep\Print\Print_Phieu_NhapBaoHanhSanPham_DetailRepository.cs" />
+    <Compile Include="Rep\Print\Print_Phieu_NhapCatDatSanPham_DetailRepository.cs" />
+    <Compile Include="Rep\Print\Print_Phieu_NhapMuonTra_DetailRepositoryy.cs" />
+    <Compile Include="Rep\Print\Print_Phieu_NhapSanPhamMoi_DetailRepository.cs" />
+    <Compile Include="Rep\Print\Print_Phieu_NhapSanPham_DetailRepository.cs" />
+    <Compile Include="Rep\Print\Print_Phieu_NhapSuaChuaSanPham_DetailRepository.cs" />
+    <Compile Include="Rep\Print\Print_Phieu_NhapTHTH_DetailRepositoryy.cs" />
+    <Compile Include="Rep\Print\Print_Phieu_XuatBaoHanhSanPham_DetailRepository.cs" />
+    <Compile Include="Rep\Print\Print_Phieu_XuatCaiDatSanPham_DetailRepository.cs" />
+    <Compile Include="Rep\Print\Print_Phieu_XuatMuonTra_DetailRepository.cs" />
+    <Compile Include="Rep\Print\Print_Phieu_XuatSanPham_DetailRepository.cs" />
+    <Compile Include="Rep\Print\Print_Phieu_XuatSuaChuaSanPham_DetailRepository.cs" />
+    <Compile Include="Rep\Print\Print_Phieu_XuatTHTH_DetailRepository.cs" />
+    <Compile Include="Rep\Report\KH_XuatBaoDam_PhuLuc3Repository.cs" />
+    <Compile Include="Rep\Report\QuyetToanMayMaAndTBNV_Mau21_13Repository.cs" />
+    <Compile Include="Rep\Report\TinhHinhTaiSan0h_Mau03_2009Repository.cs" />
+    <Compile Include="Rep\Report\TangGiam_Mau04_2009Repository.cs" />
+    <Compile Include="Rep\Report\KH_XuatBaoDam_PhuLuc2Repository.cs" />
+    <Compile Include="Rep\Report\KH_XuatBaoDam_PhuLuc1Repository.cs" />
+    <Compile Include="Rep\Report\QuyetToanTLKTMM_Mau20_13_QLKT_BCYRepository.cs" />
+    <Compile Include="Rep\Report\NhapXuatTon_Mau10_13Repository.cs" />
+    <Compile Include="Rep\Report\ReportDataRepository.cs" />
+    <Compile Include="Rep\Sys\DuLieuGanNhatTrenFormRepository.cs" />
+    <Compile Include="Rep\Sys\SysMenuRepository.cs" />
+    <Compile Include="Rep\Sys\AuditingLogRepository.cs" />
+    <Compile Include="Rep\Sys\ConfigRepository.cs" />
+    <Compile Include="Rep\Sys\LogAccessRepository.cs" />
+    <Compile Include="Rep\Sys\RolePermissionRepository.cs" />
+    <Compile Include="Rep\Sys\SysRoleRepository.cs" />
+    <Compile Include="Rep\Sys\SysUserRepository.cs" />
+    <Compile Include="SoSach\GhiSoKho.cs" />
+    <Compile Include="ViewModels\TimKiemHangHoaNangCao.cs" />
+    <Compile Include="ViewModels\ArgumentTimKiemHangHoaNangCao.cs" />
+    <Compile Include="ViewModels\ArgumentSearchLogAction.cs" />
+    <Compile Include="ViewModels\ArgumentSearchLogAccess.cs" />
+    <Compile Include="ViewModels\SelectedItem.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Rep\BaseRepository.cs" />
+    <Compile Include="Rep\IBaseRepository.cs" />
+    <Compile Include="Resources\SystemLogResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SystemLogResource.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MT.Library\MT.Library.csproj">
+      <Project>{bfea1f2c-0adc-42f1-b334-381dbf8bdac9}</Project>
+      <Name>MT.Library</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MTControl\MTControl.csproj">
+      <Project>{6eeb95b9-6e2a-48f8-b7d0-b2fa78e31196}</Project>
+      <Name>MTControl</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="EnumResources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>EnumResources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\SystemLogResource.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>SystemLogResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

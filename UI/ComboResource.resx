@@ -1,0 +1,1422 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="DM_CanBo" xml:space="preserve">
+    <value>Danh mục cán bộ</value>
+  </data>
+  <data name="DM_CanBo_bDeleted" xml:space="preserve">
+    <value>Đã xóa</value>
+  </data>
+  <data name="DM_CanBo_dCreatedDate" xml:space="preserve">
+    <value>Ngày tạo</value>
+  </data>
+  <data name="DM_CanBo_dModifiedDate" xml:space="preserve">
+    <value>Ngày sửa</value>
+  </data>
+  <data name="DM_CanBo_sCreatedBy" xml:space="preserve">
+    <value>Người tạo</value>
+  </data>
+  <data name="DM_CanBo_sDienThoai" xml:space="preserve">
+    <value>Điện thoại</value>
+  </data>
+  <data name="DM_CanBo_sDM_ChucVu_Id" xml:space="preserve">
+    <value>Mã chức vụ</value>
+  </data>
+  <data name="DM_CanBo_sDM_DonVi_Id" xml:space="preserve">
+    <value>Mã đơn vị</value>
+  </data>
+  <data name="DM_CanBo_sDM_Kho_Id" xml:space="preserve">
+    <value>Mã kho</value>
+  </data>
+  <data name="DM_CanBo_sEmail" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="DM_CanBo_sGhiChu" xml:space="preserve">
+    <value>Ghi chú</value>
+  </data>
+  <data name="DM_CanBo_sMaCanBo" xml:space="preserve">
+    <value>Mã cán bộ</value>
+  </data>
+  <data name="DM_CanBo_sModifiedBy" xml:space="preserve">
+    <value>Người sửa</value>
+  </data>
+  <data name="DM_CanBo_SortOrder" xml:space="preserve">
+    <value>Kiểu sắp xếp</value>
+  </data>
+  <data name="DM_CanBo_sTenCanBo" xml:space="preserve">
+    <value>Tên cán bộ</value>
+  </data>
+  <data name="DM_ChucVu" xml:space="preserve">
+    <value>Danh mục chức vụ</value>
+  </data>
+  <data name="DM_ChucVu_bDeleted" xml:space="preserve">
+    <value>Đã xóa</value>
+  </data>
+  <data name="DM_ChucVu_dCreatedDate" xml:space="preserve">
+    <value>Ngày tạo</value>
+  </data>
+  <data name="DM_ChucVu_dModifiedDate" xml:space="preserve">
+    <value>Ngày sửa</value>
+  </data>
+  <data name="DM_ChucVu_sCreatedBy" xml:space="preserve">
+    <value>Người tạo</value>
+  </data>
+  <data name="DM_ChucVu_sGhiChu" xml:space="preserve">
+    <value>Ghi chú</value>
+  </data>
+  <data name="DM_ChucVu_sModifiedBy" xml:space="preserve">
+    <value>Người sửa</value>
+  </data>
+  <data name="DM_ChucVu_SortOrder" xml:space="preserve">
+    <value>Sắp xếp hiển thị</value>
+  </data>
+  <data name="DM_ChucVu_sTenChucvu" xml:space="preserve">
+    <value>Tên chức vụ</value>
+  </data>
+  <data name="DM_DonVi" xml:space="preserve">
+    <value>Danh mục đơn vị</value>
+  </data>
+  <data name="DM_DonVidCreatedDate" xml:space="preserve">
+    <value>Ngày tạo</value>
+  </data>
+  <data name="DM_DonVidModifiedDate" xml:space="preserve">
+    <value>Ngày sửa</value>
+  </data>
+  <data name="DM_DonViiLoai" xml:space="preserve">
+    <value>Loại đơn vị</value>
+  </data>
+  <data name="DM_DonVis_bDeleted" xml:space="preserve">
+    <value>Đã xóa</value>
+  </data>
+  <data name="DM_DonVis_CreatedBy" xml:space="preserve">
+    <value>Người tạo</value>
+  </data>
+  <data name="DM_DonVis_GhiChu" xml:space="preserve">
+    <value>Ghi chú</value>
+  </data>
+  <data name="DM_DonVis_MaDonvi" xml:space="preserve">
+    <value>Mã đơn vị</value>
+  </data>
+  <data name="DM_DonVis_ModifiedBy" xml:space="preserve">
+    <value>Sửa bởi ai</value>
+  </data>
+  <data name="DM_DonVis_ortOrder" xml:space="preserve">
+    <value>Sắp xếp hiển thị</value>
+  </data>
+  <data name="DM_DonVis_ParentId" xml:space="preserve">
+    <value>Mã đơn vị cha</value>
+  </data>
+  <data name="DM_DonVis_TenDonvi" xml:space="preserve">
+    <value>Tên đơn vị</value>
+  </data>
+  <data name="DM_DonViTinh" xml:space="preserve">
+    <value>Danh mục đơn vị tính</value>
+  </data>
+  <data name="DM_DonViTinh_bDeleted" xml:space="preserve">
+    <value>Đã xóa</value>
+  </data>
+  <data name="DM_DonViTinh_dCreatedDate" xml:space="preserve">
+    <value>Ngày tạo</value>
+  </data>
+  <data name="DM_DonViTinh_dModifiedDate" xml:space="preserve">
+    <value>Ngày sửa</value>
+  </data>
+  <data name="DM_DonViTinh_sCreatedBy" xml:space="preserve">
+    <value>Người tạo</value>
+  </data>
+  <data name="DM_DonViTinh_sGhiChu" xml:space="preserve">
+    <value>Ghi chú</value>
+  </data>
+  <data name="DM_DonViTinh_sModifiedBy" xml:space="preserve">
+    <value>Người sửa</value>
+  </data>
+  <data name="DM_DonViTinh_SortOrder" xml:space="preserve">
+    <value>Sắp xếp hiển thị</value>
+  </data>
+  <data name="DM_DonViTinh_sTenDonViTinh" xml:space="preserve">
+    <value>Tên đơn vị tính</value>
+  </data>
+  <data name="DM_HinhThucLCNT" xml:space="preserve">
+    <value>Danh mục hình thức lựa chọn nhà thầu</value>
+  </data>
+  <data name="DM_HinhThucLCNT_dCreatedDate" xml:space="preserve">
+    <value>Ngày tạo</value>
+  </data>
+  <data name="DM_HinhThucLCNT_dModifiedDate" xml:space="preserve">
+    <value>Ngày sửa</value>
+  </data>
+  <data name="DM_HinhThucLCNT_sCreatedBy" xml:space="preserve">
+    <value>Người tạo</value>
+  </data>
+  <data name="DM_HinhThucLCNT_sModifiedBy" xml:space="preserve">
+    <value>Người sửa</value>
+  </data>
+  <data name="DM_HinhThucLCNT_sTenHinhThucLCNT" xml:space="preserve">
+    <value>Tên hình thức lựa chọn nhà thầu</value>
+  </data>
+  <data name="DM_Kho" xml:space="preserve">
+    <value>Danh mục kho</value>
+  </data>
+  <data name="DM_Kho_dCreatedDate" xml:space="preserve">
+    <value>Ngày tạo</value>
+  </data>
+  <data name="DM_Kho_dModifiedDate" xml:space="preserve">
+    <value>Ngày sửa</value>
+  </data>
+  <data name="DM_Kho_sCreatedBy" xml:space="preserve">
+    <value>Người tạo</value>
+  </data>
+  <data name="DM_Kho_sDM_Donvi_Id" xml:space="preserve">
+    <value>ID danh mục đơn vị</value>
+  </data>
+  <data name="DM_Kho_sGhiChu" xml:space="preserve">
+    <value>Ghi chú</value>
+  </data>
+  <data name="DM_Kho_sModifiedBy" xml:space="preserve">
+    <value>Người sửa</value>
+  </data>
+  <data name="DM_LoaiDonVi" xml:space="preserve">
+    <value>Danh mục loại đơn vị</value>
+  </data>
+  <data name="DM_MangLienLac" xml:space="preserve">
+    <value>Danh mục mạng liên lạc</value>
+  </data>
+  <data name="DM_MangLienLac_dCreatedDate" xml:space="preserve">
+    <value>Ngày tạo</value>
+  </data>
+  <data name="DM_MangLienLac_dModifiedDate" xml:space="preserve">
+    <value>Ngày sửa</value>
+  </data>
+  <data name="DM_MangLienLac_sCreatedBy" xml:space="preserve">
+    <value>Người tạo</value>
+  </data>
+  <data name="DM_MangLienLac_sDM_ThamSoMatMa_id" xml:space="preserve">
+    <value>ID danh mục tham số mật mã</value>
+  </data>
+  <data name="DM_MangLienLac_sGhiChu" xml:space="preserve">
+    <value>Ghi chú</value>
+  </data>
+  <data name="DM_MangLienLac_sMaMangLienLac" xml:space="preserve">
+    <value>Mã mạng liên lạc</value>
+  </data>
+  <data name="DM_MangLienLac_sModifiedBy" xml:space="preserve">
+    <value>Người sửa</value>
+  </data>
+  <data name="DM_MangLienLac_sTenMangLienLac" xml:space="preserve">
+    <value>Tên mạng liên lạc</value>
+  </data>
+  <data name="DM_NguonVon" xml:space="preserve">
+    <value>Danh mục nguồn vốn</value>
+  </data>
+  <data name="DM_NguonVon_dCreatedDate" xml:space="preserve">
+    <value>Ngày tạo</value>
+  </data>
+  <data name="DM_NguonVon_dModifiedDate" xml:space="preserve">
+    <value>Ngày sửa</value>
+  </data>
+  <data name="DM_NguonVon_sCreatedBy" xml:space="preserve">
+    <value>Người tạo</value>
+  </data>
+  <data name="DM_NguonVon_sGhiChu" xml:space="preserve">
+    <value>Ghi chú</value>
+  </data>
+  <data name="DM_NguonVon_sModifiedBy" xml:space="preserve">
+    <value>Người sửa</value>
+  </data>
+  <data name="DM_NguonVon_sTenNguonVon" xml:space="preserve">
+    <value>Tên nguồn vốn</value>
+  </data>
+  <data name="DM_NhaCC" xml:space="preserve">
+    <value>Danh mục nhà cung cấp</value>
+  </data>
+  <data name="DM_NhaCC_dCreatedDate" xml:space="preserve">
+    <value>Ngày tạo</value>
+  </data>
+  <data name="DM_NhaCC_dModifiedDate" xml:space="preserve">
+    <value>Ngày sửa</value>
+  </data>
+  <data name="DM_NhaCC_sCreatedBy" xml:space="preserve">
+    <value>Người sửa</value>
+  </data>
+  <data name="DM_NhaCC_sGhiChu" xml:space="preserve">
+    <value>Ghi chú</value>
+  </data>
+  <data name="DM_NhaCC_sModifiedBy" xml:space="preserve">
+    <value>Người sửa</value>
+  </data>
+  <data name="DM_NhaCC_sTenNCC" xml:space="preserve">
+    <value>Tên nhà cung cấp</value>
+  </data>
+  <data name="DM_NhomSanPham" xml:space="preserve">
+    <value>Danh mục nhóm sản phẩm</value>
+  </data>
+  <data name="DM_NhomSanPham_dCreatedDate" xml:space="preserve">
+    <value>Ngày tạo</value>
+  </data>
+  <data name="DM_NhomSanPham_dModifiedDate" xml:space="preserve">
+    <value>Ngày sửa</value>
+  </data>
+  <data name="DM_NhomSanPham_sCreatedBy" xml:space="preserve">
+    <value>Người sửa</value>
+  </data>
+  <data name="DM_NhomSanPham_sGhiChu" xml:space="preserve">
+    <value>Ghi chú</value>
+  </data>
+  <data name="DM_NhomSanPham_sModifiedBy" xml:space="preserve">
+    <value>Người sửa</value>
+  </data>
+  <data name="DM_NhomSanPham_sTenNhomSanPham" xml:space="preserve">
+    <value>Tên nhóm sản phẩm</value>
+  </data>
+  <data name="DM_NoiDungCaiDat" xml:space="preserve">
+    <value>Danh mục nội dung cài đặt</value>
+  </data>
+  <data name="DM_NoiDungCaiDat_dCreatedDate" xml:space="preserve">
+    <value>Ngày tạo</value>
+  </data>
+  <data name="DM_NoiDungCaiDat_dModifiedDate" xml:space="preserve">
+    <value>Ngày sửa</value>
+  </data>
+  <data name="DM_NoiDungCaiDat_sCreatedBy" xml:space="preserve">
+    <value>Người sửa</value>
+  </data>
+  <data name="DM_NoiDungCaiDat_sGhiChu" xml:space="preserve">
+    <value>Ghi chú</value>
+  </data>
+  <data name="DM_NoiDungCaiDat_sModifiedBy" xml:space="preserve">
+    <value>Người sửa</value>
+  </data>
+  <data name="DM_NoiDungCaiDat_sTenNoiDungCaiDat" xml:space="preserve">
+    <value>Tên nội dung cài đặt</value>
+  </data>
+  <data name="DM_NoiDungSuaChua" xml:space="preserve">
+    <value>Danh mục nội dung sửa chữa</value>
+  </data>
+  <data name="DM_NoiDungSuaChua_dCreatedDate" xml:space="preserve">
+    <value>Ngày tạo</value>
+  </data>
+  <data name="DM_NoiDungSuaChua_dModifiedDate" xml:space="preserve">
+    <value>Ngày sửa</value>
+  </data>
+  <data name="DM_NoiDungSuaChua_sCreatedBy" xml:space="preserve">
+    <value>Người tạo</value>
+  </data>
+  <data name="DM_NoiDungSuaChua_sGhiChu" xml:space="preserve">
+    <value>Ghi chú</value>
+  </data>
+  <data name="DM_NoiDungSuaChua_sModifiedBy" xml:space="preserve">
+    <value>Người sửa</value>
+  </data>
+  <data name="DM_NoiDungSuaChua_sTenNoiDungSuaChua" xml:space="preserve">
+    <value>Tên nội dung sửa chữa</value>
+  </data>
+  <data name="DM_PhuKien" xml:space="preserve">
+    <value>Danh mục nội dung sửa chữa</value>
+  </data>
+  <data name="DM_PhuKien_dCreatedDate" xml:space="preserve">
+    <value>Ngày tạo</value>
+  </data>
+  <data name="DM_PhuKien_dModifiedDate" xml:space="preserve">
+    <value>Ngày sửa</value>
+  </data>
+  <data name="DM_PhuKien_iDM_DonViTinh_Id" xml:space="preserve">
+    <value>ID đơn vị tính</value>
+  </data>
+  <data name="DM_PhuKien_iDM_SanPham_Id" xml:space="preserve">
+    <value>ID sản phẩm</value>
+  </data>
+  <data name="DM_PhuKien_rDonGia" xml:space="preserve">
+    <value>Đơn giá</value>
+  </data>
+  <data name="DM_PhuKien_sCreatedBy" xml:space="preserve">
+    <value>Người tạo</value>
+  </data>
+  <data name="DM_PhuKien_sGhiChu" xml:space="preserve">
+    <value>Ghi chú</value>
+  </data>
+  <data name="DM_PhuKien_sMaPhuKien" xml:space="preserve">
+    <value>Mã phụ kiện</value>
+  </data>
+  <data name="DM_PhuKien_sModifiedBy" xml:space="preserve">
+    <value>Người sửa</value>
+  </data>
+  <data name="DM_PhuKien_sTenPhuKien" xml:space="preserve">
+    <value>Tên phụ kiện</value>
+  </data>
+  <data name="DM_PhuKien_sXuatXu" xml:space="preserve">
+    <value>Xuất xứ</value>
+  </data>
+  <data name="DM_SanPham" xml:space="preserve">
+    <value>Danh mục sản phẩm</value>
+  </data>
+  <data name="DM_SanPham_dCreatedDate" xml:space="preserve">
+    <value>Ngày tạo</value>
+  </data>
+  <data name="DM_SanPham_dModifiedDate" xml:space="preserve">
+    <value>Ngày sửa</value>
+  </data>
+  <data name="DM_SanPham_iKichThuocDongGio" xml:space="preserve">
+    <value>Kích thước đóng gói </value>
+  </data>
+  <data name="DM_SanPham_rDonGia_Cap1" xml:space="preserve">
+    <value>Đơn giá cấp 1</value>
+  </data>
+  <data name="DM_SanPham_rDonGia_Cap2" xml:space="preserve">
+    <value>Đơn giá cấp 2</value>
+  </data>
+  <data name="DM_SanPham_sCauHinhKyThuat" xml:space="preserve">
+    <value>Cấu hình kỹ thuật</value>
+  </data>
+  <data name="DM_SanPham_sCreatedBy" xml:space="preserve">
+    <value>Người tạo</value>
+  </data>
+  <data name="DM_SanPham_sDM_DonViTinh_Id_Cap1" xml:space="preserve">
+    <value>ID đơn vị tính cấp 1</value>
+  </data>
+  <data name="DM_SanPham_sDM_DonViTinh_Id_Cap2" xml:space="preserve">
+    <value>ID đơn vị tính cấp 2</value>
+  </data>
+  <data name="DM_SanPham_sDM_NhaCC_Id" xml:space="preserve">
+    <value>ID nhà cung cấp</value>
+  </data>
+  <data name="DM_SanPham_sDM_NhomSanPham_Id" xml:space="preserve">
+    <value>ID danh mục nhóm sản phẩm</value>
+  </data>
+  <data name="DM_SanPham_sGhiChu" xml:space="preserve">
+    <value>Ghi chú</value>
+  </data>
+  <data name="DM_SanPham_sMaSanPham" xml:space="preserve">
+    <value>Mã sản phẩm</value>
+  </data>
+  <data name="DM_SanPham_sModifiedBy" xml:space="preserve">
+    <value>Người sửa</value>
+  </data>
+  <data name="DM_SanPham_sTenSanPham" xml:space="preserve">
+    <value>Tên sản phẩm</value>
+  </data>
+  <data name="DM_SanPham_sXuatXu" xml:space="preserve">
+    <value>Xuất xứ</value>
+  </data>
+  <data name="DM_ThamSoMatMa" xml:space="preserve">
+    <value>Danh mục tham số mật mã</value>
+  </data>
+  <data name="DM_ThamSoMatMa_dCreatedDate" xml:space="preserve">
+    <value>Ngày tạo</value>
+  </data>
+  <data name="DM_ThamSoMatMa_dModifiedDate" xml:space="preserve">
+    <value>Ngày sửa</value>
+  </data>
+  <data name="DM_ThamSoMatMa_dNgayHieuLuc" xml:space="preserve">
+    <value>Ngày hiệu lực</value>
+  </data>
+  <data name="DM_ThamSoMatMa_iDonViThoiGianHieuLuc" xml:space="preserve">
+    <value>Đơn vị thời gian hiệu lực</value>
+  </data>
+  <data name="DM_ThamSoMatMa_iThoiHanSuDung" xml:space="preserve">
+    <value>Thời hạn sử dụng</value>
+  </data>
+  <data name="DM_ThamSoMatMa_sCreatedBy" xml:space="preserve">
+    <value>Người tạo</value>
+  </data>
+  <data name="DM_ThamSoMatMa_sGhiChu" xml:space="preserve">
+    <value>Ghi chú</value>
+  </data>
+  <data name="DM_ThamSoMatMa_sMaThamSoMatMa" xml:space="preserve">
+    <value>Mã tham số mật mã</value>
+  </data>
+  <data name="DM_ThamSoMatMa_sModifiedBy" xml:space="preserve">
+    <value>Người sửa</value>
+  </data>
+  <data name="DM_ThamSoMatMa_sTenThamSoMatMa" xml:space="preserve">
+    <value>Tên tham số mật mã</value>
+  </data>
+  <data name="DM_TinhTrangHongHoc" xml:space="preserve">
+    <value>Danh mục tình trạng hỏng hóc</value>
+  </data>
+  <data name="DM_TinhTrangHongHoc_dCreatedDate" xml:space="preserve">
+    <value>Ngày tạo</value>
+  </data>
+  <data name="DM_TinhTrangHongHoc_dModifiedDate" xml:space="preserve">
+    <value>Ngày sửa</value>
+  </data>
+  <data name="DM_TinhTrangHongHoc_sCreatedBy" xml:space="preserve">
+    <value>Người tạo</value>
+  </data>
+  <data name="DM_TinhTrangHongHoc_sGhiChu" xml:space="preserve">
+    <value>Ghi chú</value>
+  </data>
+  <data name="DM_TinhTrangHongHoc_sModifiedBy" xml:space="preserve">
+    <value>Người sửa</value>
+  </data>
+  <data name="DM_TinhTrangHongHoc_sTenTinhTrangHongHoc" xml:space="preserve">
+    <value>Tên tình trạng hỏng hóc</value>
+  </data>
+  <data name="DM_TinhTrangPhuKien" xml:space="preserve">
+    <value>Danh mục tình trạng phụ kiện</value>
+  </data>
+  <data name="DM_TinhTrangPhuKien_dCreatedDate" xml:space="preserve">
+    <value>Ngày tạo</value>
+  </data>
+  <data name="DM_TinhTrangPhuKien_dModifiedDate" xml:space="preserve">
+    <value>Ngày sửa</value>
+  </data>
+  <data name="DM_TinhTrangPhuKien_sCreatedBy" xml:space="preserve">
+    <value>Người tạo</value>
+  </data>
+  <data name="DM_TinhTrangPhuKien_sGhiChu" xml:space="preserve">
+    <value>Ghi chú</value>
+  </data>
+  <data name="DM_TinhTrangPhuKien_sModifiedBy" xml:space="preserve">
+    <value>Người sửa</value>
+  </data>
+  <data name="DM_TinhTrangPhuKien_sTenTinhTrangPhuKien" xml:space="preserve">
+    <value>Tên tình trạng phụ kiện</value>
+  </data>
+  <data name="FormPermission" xml:space="preserve">
+    <value>Form danh sách quyền</value>
+  </data>
+  <data name="FormPermission_FormId" xml:space="preserve">
+    <value>ID form</value>
+  </data>
+  <data name="FormPermission_FormName" xml:space="preserve">
+    <value>Tên form</value>
+  </data>
+  <data name="FormPermission_MaxPermission" xml:space="preserve">
+    <value>Quyền truy cập lớn nhất</value>
+  </data>
+  <data name="FormPermission_ParentId" xml:space="preserve">
+    <value>ID form cha</value>
+  </data>
+  <data name="KH_NhapSanPhamMoi" xml:space="preserve">
+    <value>Kế hoạch nhập mới sản phẩm</value>
+  </data>
+  <data name="KH_NhapSanPhamMoi_CT" xml:space="preserve">
+    <value>Chi tiết kế hoạch nhập mới sản phẩm</value>
+  </data>
+  <data name="KH_NhapSanPhamMoi_CT_dCreatedDate" xml:space="preserve">
+    <value>Ngày tạo</value>
+  </data>
+  <data name="KH_NhapSanPhamMoi_CT_dModifiedDate" xml:space="preserve">
+    <value>Ngày sửa</value>
+  </data>
+  <data name="KH_NhapSanPhamMoi_CT_PhuKien" xml:space="preserve">
+    <value>Chi tiết phụ kiện trong kế hoạch nhập mới sản phẩm</value>
+  </data>
+  <data name="KH_NhapSanPhamMoi_CT_PhuKien_dCreatedDate" xml:space="preserve">
+    <value>Ngày tạo</value>
+  </data>
+  <data name="KH_NhapSanPhamMoi_CT_PhuKien_dModifiedDate" xml:space="preserve">
+    <value>Ngày sửa</value>
+  </data>
+  <data name="KH_NhapSanPhamMoi_CT_PhuKien_rDonGia" xml:space="preserve">
+    <value>Đơn giá</value>
+  </data>
+  <data name="KH_NhapSanPhamMoi_CT_PhuKien_rSoLuong" xml:space="preserve">
+    <value>Số lượng</value>
+  </data>
+  <data name="KH_NhapSanPhamMoi_CT_PhuKien_rThanhTien" xml:space="preserve">
+    <value>Thành tiền</value>
+  </data>
+  <data name="KH_NhapSanPhamMoi_CT_PhuKien_sCreatedBy" xml:space="preserve">
+    <value>Người tạo</value>
+  </data>
+  <data name="KH_NhapSanPhamMoi_CT_PhuKien_sDM_DonViTinh_Id" xml:space="preserve">
+    <value>ID danh mục đơn vị tính</value>
+  </data>
+  <data name="KH_NhapSanPhamMoi_CT_PhuKien_sDM_PhuKien_Id" xml:space="preserve">
+    <value>ID danh phục phụ kiện</value>
+  </data>
+  <data name="KH_NhapSanPhamMoi_CT_PhuKien_sDM_SanPham_Id" xml:space="preserve">
+    <value>ID danh mục sản phẩm</value>
+  </data>
+  <data name="KH_NhapSanPhamMoi_CT_PhuKien_sGhiChu" xml:space="preserve">
+    <value>Ghi chú</value>
+  </data>
+  <data name="KH_NhapSanPhamMoi_CT_PhuKien_sKH_NhapSanPhamMoi_CT_Id" xml:space="preserve">
+    <value>ID kế hoạch nhập sản phẩm mới chi tiết</value>
+  </data>
+  <data name="KH_NhapSanPhamMoi_CT_PhuKien_sModifiedBy" xml:space="preserve">
+    <value>Người sửa</value>
+  </data>
+  <data name="KH_NhapSanPhamMoi_CT_PhuKien_sXuatXu" xml:space="preserve">
+    <value>Xuất xứ</value>
+  </data>
+  <data name="KH_NhapSanPhamMoi_CT_rDonGia" xml:space="preserve">
+    <value>Đơn giá</value>
+  </data>
+  <data name="KH_NhapSanPhamMoi_CT_rSoLuong" xml:space="preserve">
+    <value>Số lượng</value>
+  </data>
+  <data name="KH_NhapSanPhamMoi_CT_rThanhTien" xml:space="preserve">
+    <value>Thành tiền</value>
+  </data>
+  <data name="KH_NhapSanPhamMoi_CT_sCreatedBy" xml:space="preserve">
+    <value>Người tạo</value>
+  </data>
+  <data name="KH_NhapSanPhamMoi_CT_sDM_DonViTinh_Id" xml:space="preserve">
+    <value>ID đơn vị tính</value>
+  </data>
+  <data name="KH_NhapSanPhamMoi_CT_sDM_DonVi_Id_DonViNhap" xml:space="preserve">
+    <value>ID danh mục đơn vị nhập</value>
+  </data>
+  <data name="KH_NhapSanPhamMoi_CT_sDM_Kho_Id" xml:space="preserve">
+    <value>ID danh mục kho</value>
+  </data>
+  <data name="KH_NhapSanPhamMoi_CT_sDM_SanPham_Id" xml:space="preserve">
+    <value>ID danh mục sản phẩm</value>
+  </data>
+  <data name="KH_NhapSanPhamMoi_CT_sGhiChu" xml:space="preserve">
+    <value>Ghi chú</value>
+  </data>
+  <data name="KH_NhapSanPhamMoi_CT_sKH_NhapSanPhamMoi_Id" xml:space="preserve">
+    <value>ID kế hoạch nhập sản phẩm mới</value>
+  </data>
+  <data name="KH_NhapSanPhamMoi_CT_sModifiedBy" xml:space="preserve">
+    <value>Người sửa</value>
+  </data>
+  <data name="KH_NhapSanPhamMoi_CT_sXuatXu" xml:space="preserve">
+    <value>Xuất xứ</value>
+  </data>
+  <data name="KH_NhapSanPhamMoi_dCreatedDate" xml:space="preserve">
+    <value>Ngày tạo</value>
+  </data>
+  <data name="KH_NhapSanPhamMoi_dModifiedDate" xml:space="preserve">
+    <value>Ngày sửa</value>
+  </data>
+  <data name="KH_NhapSanPhamMoi_dNgayHopDong" xml:space="preserve">
+    <value>Ngày hợp đồng</value>
+  </data>
+  <data name="KH_NhapSanPhamMoi_iDonViThoiGianHieuLuc" xml:space="preserve">
+    <value>Đơn vị thời gian hiệu lực</value>
+  </data>
+  <data name="KH_NhapSanPhamMoi_iThoiGianHieuLuc" xml:space="preserve">
+    <value>Thời gian hiệu lực</value>
+  </data>
+  <data name="KH_NhapSanPhamMoi_sCreatedBy" xml:space="preserve">
+    <value>Người tạo</value>
+  </data>
+  <data name="KH_NhapSanPhamMoi_sDM_CanBo_Id_NguoiKy" xml:space="preserve">
+    <value>ID người ký</value>
+  </data>
+  <data name="KH_NhapSanPhamMoi_sDM_CanBo_Id_NguoiLapKH" xml:space="preserve">
+    <value>ID người lập kế hoạch</value>
+  </data>
+  <data name="KH_NhapSanPhamMoi_sDM_DonVi_Id_DonViXayDungKH" xml:space="preserve">
+    <value>ID đơn vị xây dựng kế hoạch</value>
+  </data>
+  <data name="KH_NhapSanPhamMoi_sDM_HinhThucLCNT_Id" xml:space="preserve">
+    <value>ID hình thức lựa chọn nhà thầu</value>
+  </data>
+  <data name="KH_NhapSanPhamMoi_sDM_NguonVon_Id" xml:space="preserve">
+    <value>ID nguồn vốn</value>
+  </data>
+  <data name="KH_NhapSanPhamMoi_sDM_NhaCC_Id" xml:space="preserve">
+    <value>ID nhà cung cấp</value>
+  </data>
+  <data name="KH_NhapSanPhamMoi_sGhiChu" xml:space="preserve">
+    <value>Ghi chú</value>
+  </data>
+  <data name="KH_NhapSanPhamMoi_sSoHopDong" xml:space="preserve">
+    <value>Số hợp đồng</value>
+  </data>
+  <data name="KH_XuatSanPham" xml:space="preserve">
+    <value>Kế hoạch xuất sản phẩm</value>
+  </data>
+  <data name="KH_XuatSanPham_CT" xml:space="preserve">
+    <value>Chi tiết kế hoạch xuất sản phẩm</value>
+  </data>
+  <data name="KH_XuatSanPham_CT_dCreatedDate" xml:space="preserve">
+    <value>Ngày tạo</value>
+  </data>
+  <data name="KH_XuatSanPham_CT_dModifiedDate" xml:space="preserve">
+    <value>Ngày sửa</value>
+  </data>
+  <data name="KH_XuatSanPham_CT_PhuKien" xml:space="preserve">
+    <value>Chi tiết phụ kiện trong kế hoạch xuất sản phẩm</value>
+  </data>
+  <data name="KH_XuatSanPham_CT_PhuKien_dCreatedDate" xml:space="preserve">
+    <value>Ngày tạo</value>
+  </data>
+  <data name="KH_XuatSanPham_CT_PhuKien_dModifiedDate" xml:space="preserve">
+    <value>Ngày sửa</value>
+  </data>
+  <data name="KH_XuatSanPham_CT_PhuKien_rDonGia" xml:space="preserve">
+    <value>Đơn giá</value>
+  </data>
+  <data name="KH_XuatSanPham_CT_PhuKien_rSoLuong" xml:space="preserve">
+    <value>Số lượng</value>
+  </data>
+  <data name="KH_XuatSanPham_CT_PhuKien_rThanhTien" xml:space="preserve">
+    <value>Thành tiền</value>
+  </data>
+  <data name="KH_XuatSanPham_CT_PhuKien_sCreatedBy" xml:space="preserve">
+    <value>Người tạo</value>
+  </data>
+  <data name="KH_XuatSanPham_CT_PhuKien_sDM_DonViTinh_Id" xml:space="preserve">
+    <value>ID đơn vị tính</value>
+  </data>
+  <data name="KH_XuatSanPham_CT_PhuKien_sDM_PhuKien_Id" xml:space="preserve">
+    <value>ID phụ kiện</value>
+  </data>
+  <data name="KH_XuatSanPham_CT_PhuKien_sDM_SanPham_Id" xml:space="preserve">
+    <value>ID sản phẩm</value>
+  </data>
+  <data name="KH_XuatSanPham_CT_PhuKien_sGhiChu" xml:space="preserve">
+    <value>Ghi chú</value>
+  </data>
+  <data name="KH_XuatSanPham_CT_PhuKien_sKH_XuatSanPham_CT_Id" xml:space="preserve">
+    <value>ID kế hoahcj xuất sản phẩm</value>
+  </data>
+  <data name="KH_XuatSanPham_CT_PhuKien_sModifiedBy" xml:space="preserve">
+    <value>Người sửa</value>
+  </data>
+  <data name="KH_XuatSanPham_CT_PhuKien_sXuatXu" xml:space="preserve">
+    <value>Xuất xứ</value>
+  </data>
+  <data name="KH_XuatSanPham_CT_rDonGia" xml:space="preserve">
+    <value>Đơn giá</value>
+  </data>
+  <data name="KH_XuatSanPham_CT_rSoLuong" xml:space="preserve">
+    <value>Số lượng</value>
+  </data>
+  <data name="KH_XuatSanPham_CT_rThanhTien" xml:space="preserve">
+    <value>Thành tiền</value>
+  </data>
+  <data name="KH_XuatSanPham_CT_sCreatedBy" xml:space="preserve">
+    <value>Người tạo</value>
+  </data>
+  <data name="KH_XuatSanPham_CT_sDM_DonViTinh_Id" xml:space="preserve">
+    <value>Id đơn vị tính</value>
+  </data>
+  <data name="KH_XuatSanPham_CT_sDM_DonVi_Id_DonViNhap" xml:space="preserve">
+    <value>ID đơn vị nhập</value>
+  </data>
+  <data name="KH_XuatSanPham_CT_sDM_Kho_Id_Nhap" xml:space="preserve">
+    <value>ID danh mục kho nhập</value>
+  </data>
+  <data name="KH_XuatSanPham_CT_sDM_Kho_Id_Xuat" xml:space="preserve">
+    <value>ID danh mục kho xuất</value>
+  </data>
+  <data name="KH_XuatSanPham_CT_sDM_MangLienLac_Id" xml:space="preserve">
+    <value>ID danh mục mạng liên lạc</value>
+  </data>
+  <data name="KH_XuatSanPham_CT_sDM_SanPham_Id" xml:space="preserve">
+    <value>ID danh mục sản phẩm</value>
+  </data>
+  <data name="KH_XuatSanPham_CT_sGhiChu" xml:space="preserve">
+    <value>Ghi chú</value>
+  </data>
+  <data name="KH_XuatSanPham_CT_sKH_XuatSanPham_Id" xml:space="preserve">
+    <value>ID kế hoạch xuất sản phẩm</value>
+  </data>
+  <data name="KH_XuatSanPham_CT_sModifiedBy" xml:space="preserve">
+    <value>Người sửa</value>
+  </data>
+  <data name="KH_XuatSanPham_CT_sXuatXu" xml:space="preserve">
+    <value>Xuất xứ</value>
+  </data>
+  <data name="KH_XuatSanPham_dCreatedDate" xml:space="preserve">
+    <value>Ngày tạo</value>
+  </data>
+  <data name="KH_XuatSanPham_dModifiedDate" xml:space="preserve">
+    <value>Ngày sửa</value>
+  </data>
+  <data name="KH_XuatSanPham_dNgayKeHoach" xml:space="preserve">
+    <value>Ngày kế hoạch</value>
+  </data>
+  <data name="KH_XuatSanPham_iDonViThoiGianHieuLuc" xml:space="preserve">
+    <value>Đơn vị thời gian hiệu lực</value>
+  </data>
+  <data name="KH_XuatSanPham_iThoiGianHieuLuc" xml:space="preserve">
+    <value>Thời gian hiệu lực</value>
+  </data>
+  <data name="KH_XuatSanPham_sCreatedBy" xml:space="preserve">
+    <value>Người tạo</value>
+  </data>
+  <data name="KH_XuatSanPham_sDM_CanBo_Id_NguoiKy" xml:space="preserve">
+    <value>ID người ký</value>
+  </data>
+  <data name="KH_XuatSanPham_sDM_CanBo_Id_NguoiLapKH" xml:space="preserve">
+    <value>ID người lập kế hoạch</value>
+  </data>
+  <data name="KH_XuatSanPham_sDM_DonVi_Id_DonViXayDungKH" xml:space="preserve">
+    <value>ID đơn vị xây dựng kế hoạch</value>
+  </data>
+  <data name="KH_XuatSanPham_sDM_DonVi_Id_DonViXuat" xml:space="preserve">
+    <value>ID đơn vị xuất</value>
+  </data>
+  <data name="KH_XuatSanPham_sGhiChu" xml:space="preserve">
+    <value>Ghi chú</value>
+  </data>
+  <data name="KH_XuatSanPham_sModifiedBy" xml:space="preserve">
+    <value>Người sửa</value>
+  </data>
+  <data name="KH_XuatSanPham_sSoKeHoach" xml:space="preserve">
+    <value>Số kế hoạch</value>
+  </data>
+  <data name="LOGERROR" xml:space="preserve">
+    <value>Ghi log lỗi</value>
+  </data>
+  <data name="LOGERROR_Description" xml:space="preserve">
+    <value>Mô tả lỗi</value>
+  </data>
+  <data name="LOGERROR_ErrorNumber" xml:space="preserve">
+    <value>Số lỗi</value>
+  </data>
+  <data name="LOGERROR_LogTime" xml:space="preserve">
+    <value>Thời gian log</value>
+  </data>
+  <data name="LOGERROR_Program" xml:space="preserve">
+    <value>Phương thức ghi log</value>
+  </data>
+  <data name="LOGERROR_StackTrace" xml:space="preserve">
+    <value>Hàng đợi truy vết</value>
+  </data>
+  <data name="LOGERROR_Username" xml:space="preserve">
+    <value>Tên người dùng</value>
+  </data>
+  <data name="NHATKY" xml:space="preserve">
+    <value>Nhật ký</value>
+  </data>
+  <data name="NHATKY_Datein" xml:space="preserve">
+    <value>Ngày vào</value>
+  </data>
+  <data name="NHATKY_Dateout" xml:space="preserve">
+    <value>Ngày ra</value>
+  </data>
+  <data name="NHATKY_handle" xml:space="preserve">
+    <value>Mã điều khiển</value>
+  </data>
+  <data name="NHATKY_Program" xml:space="preserve">
+    <value>Phương thức</value>
+  </data>
+  <data name="NHATKY_Timein" xml:space="preserve">
+    <value>Thời gian vào</value>
+  </data>
+  <data name="NHATKY_Timeout" xml:space="preserve">
+    <value>Thời gian ra</value>
+  </data>
+  <data name="NHATKY_Timeuse" xml:space="preserve">
+    <value>Thời gian sử dụng</value>
+  </data>
+  <data name="NHATKY_Username" xml:space="preserve">
+    <value>Tên đăng nhập</value>
+  </data>
+  <data name="Permission" xml:space="preserve">
+    <value>Quyền</value>
+  </data>
+  <data name="Permission_DictionaryKey" xml:space="preserve">
+    <value>Tên từ điển</value>
+  </data>
+  <data name="Permission_PermissionName" xml:space="preserve">
+    <value>Tên quyền</value>
+  </data>
+  <data name="Permission_PermissionValue" xml:space="preserve">
+    <value>Giá trị quyền</value>
+  </data>
+  <data name="Phieu_NhapSanPham" xml:space="preserve">
+    <value>Phiếu nhập sản phẩm</value>
+  </data>
+  <data name="Phieu_NhapSanPhamMoi" xml:space="preserve">
+    <value>Phiếu nhập mới sản phẩm</value>
+  </data>
+  <data name="Phieu_NhapSanPhamMoi_CT" xml:space="preserve">
+    <value>Chi tiết phiếu nhập mới sản phẩm</value>
+  </data>
+  <data name="Phieu_NhapSanPhamMoi_CT_dCreatedDate" xml:space="preserve">
+    <value>Ngày tạo</value>
+  </data>
+  <data name="Phieu_NhapSanPhamMoi_CT_dModifiedDate" xml:space="preserve">
+    <value>Ngày sửa</value>
+  </data>
+  <data name="Phieu_NhapSanPhamMoi_CT_PhuKien" xml:space="preserve">
+    <value>Chi tiết phụ kiện trong phiếu nhập mới sản phẩm</value>
+  </data>
+  <data name="Phieu_NhapSanPhamMoi_CT_PhuKien_dCreatedDate" xml:space="preserve">
+    <value>Ngày tạo</value>
+  </data>
+  <data name="Phieu_NhapSanPhamMoi_CT_PhuKien_dModifiedDate" xml:space="preserve">
+    <value>Ngày sửa</value>
+  </data>
+  <data name="Phieu_NhapSanPhamMoi_CT_PhuKien_rDonGia" xml:space="preserve">
+    <value>Đơn giá</value>
+  </data>
+  <data name="Phieu_NhapSanPhamMoi_CT_PhuKien_rSoLuong" xml:space="preserve">
+    <value>Số lượng</value>
+  </data>
+  <data name="Phieu_NhapSanPhamMoi_CT_PhuKien_rThanhTien" xml:space="preserve">
+    <value>Thành tiền</value>
+  </data>
+  <data name="Phieu_NhapSanPhamMoi_CT_PhuKien_sCreatedBy" xml:space="preserve">
+    <value>Người tạo</value>
+  </data>
+  <data name="Phieu_NhapSanPhamMoi_CT_PhuKien_sDM_DonViTinh_Id" xml:space="preserve">
+    <value>ID đơn vị tính</value>
+  </data>
+  <data name="Phieu_NhapSanPhamMoi_CT_PhuKien_sDM_PhuKien_Id" xml:space="preserve">
+    <value>ID phụ kiện</value>
+  </data>
+  <data name="Phieu_NhapSanPhamMoi_CT_PhuKien_sDM_SanPham_Id" xml:space="preserve">
+    <value>ID sản phẩm</value>
+  </data>
+  <data name="Phieu_NhapSanPhamMoi_CT_PhuKien_sGhiChu" xml:space="preserve">
+    <value>Ghi chú</value>
+  </data>
+  <data name="Phieu_NhapSanPhamMoi_CT_PhuKien_sModifiedBy" xml:space="preserve">
+    <value>Ngày sửa</value>
+  </data>
+  <data name="Phieu_NhapSanPhamMoi_CT_PhuKien_sPhieu_NhapSanPhamMoi_CT_Id" xml:space="preserve">
+    <value>ID phiếu nhập sản phẩm mới</value>
+  </data>
+  <data name="Phieu_NhapSanPhamMoi_CT_PhuKien_sXuatXu" xml:space="preserve">
+    <value>Xuất xứ</value>
+  </data>
+  <data name="Phieu_NhapSanPhamMoi_CT_rDonGia" xml:space="preserve">
+    <value>Đơng giá</value>
+  </data>
+  <data name="Phieu_NhapSanPhamMoi_CT_rSoLuong" xml:space="preserve">
+    <value>Số lượng</value>
+  </data>
+  <data name="Phieu_NhapSanPhamMoi_CT_rThanhTien" xml:space="preserve">
+    <value>Thành tiền</value>
+  </data>
+  <data name="Phieu_NhapSanPhamMoi_CT_sCreatedBy" xml:space="preserve">
+    <value>Người tạo</value>
+  </data>
+  <data name="Phieu_NhapSanPhamMoi_CT_sDM_DonViTinh_Id" xml:space="preserve">
+    <value>ID danh mục đơn vị tính</value>
+  </data>
+  <data name="Phieu_NhapSanPhamMoi_CT_sDM_SanPham_Id" xml:space="preserve">
+    <value>ID danh mục sản phẩm</value>
+  </data>
+  <data name="Phieu_NhapSanPhamMoi_CT_sGhiChu" xml:space="preserve">
+    <value>Ghi chú</value>
+  </data>
+  <data name="Phieu_NhapSanPhamMoi_CT_sMaVach" xml:space="preserve">
+    <value>Mã vạch</value>
+  </data>
+  <data name="Phieu_NhapSanPhamMoi_CT_sModifiedBy" xml:space="preserve">
+    <value>Người sửa</value>
+  </data>
+  <data name="Phieu_NhapSanPhamMoi_CT_sPhieu_NhapSanPhamMoi_Id" xml:space="preserve">
+    <value>ID phiếu nhập sản phẩm mới</value>
+  </data>
+  <data name="Phieu_NhapSanPhamMoi_CT_sSerial" xml:space="preserve">
+    <value>Số serial</value>
+  </data>
+  <data name="Phieu_NhapSanPhamMoi_dCreatedDate" xml:space="preserve">
+    <value>Ngày tạo</value>
+  </data>
+  <data name="Phieu_NhapSanPhamMoi_dModifiedDate" xml:space="preserve">
+    <value>Ngày sửa</value>
+  </data>
+  <data name="Phieu_NhapSanPhamMoi_dNgayPhieu_NhapSanPhamMoi" xml:space="preserve">
+    <value>Ngày phiếu nhập mới sản phẩm</value>
+  </data>
+  <data name="Phieu_NhapSanPhamMoi_rDonGia" xml:space="preserve">
+    <value>Đơn giá</value>
+  </data>
+  <data name="Phieu_NhapSanPhamMoi_rSoLuong" xml:space="preserve">
+    <value>Số lượng</value>
+  </data>
+  <data name="Phieu_NhapSanPhamMoi_rThanhTien" xml:space="preserve">
+    <value>Thành tiền</value>
+  </data>
+  <data name="Phieu_NhapSanPhamMoi_sCreatedBy" xml:space="preserve">
+    <value>Người tạo</value>
+  </data>
+  <data name="Phieu_NhapSanPhamMoi_sDM_CanBo_Id_NguoiKy" xml:space="preserve">
+    <value>ID cán bộ ký</value>
+  </data>
+  <data name="Phieu_NhapSanPhamMoi_sDM_CanBo_Id_NguoiLapPhieu" xml:space="preserve">
+    <value>ID cán bộ lập phiếu</value>
+  </data>
+  <data name="Phieu_NhapSanPhamMoi_sDM_CanBo_Id_NguoiNhan" xml:space="preserve">
+    <value>ID cán bộ nhận</value>
+  </data>
+  <data name="Phieu_NhapSanPhamMoi_sDM_DonVi_Id_Nhan" xml:space="preserve">
+    <value>ID đơn vị nhận</value>
+  </data>
+  <data name="Phieu_NhapSanPhamMoi_sDM_Kho_Id_Nhan" xml:space="preserve">
+    <value>ID kho nhận</value>
+  </data>
+  <data name="Phieu_NhapSanPhamMoi_sDM_NhaCC_Id" xml:space="preserve">
+    <value>ID nhà cung cấp</value>
+  </data>
+  <data name="Phieu_NhapSanPhamMoi_sGhiChu" xml:space="preserve">
+    <value>Ghi chú</value>
+  </data>
+  <data name="Phieu_NhapSanPhamMoi_sKH_NhapSanPhamMoi_Id_CanCu" xml:space="preserve">
+    <value>ID căn cứ kế hoạch nhập sản phẩm mới</value>
+  </data>
+  <data name="Phieu_NhapSanPhamMoi_sMaPhieu_NhapSanPhamMoi" xml:space="preserve">
+    <value>Mã phiếu nhập sản phẩm mới</value>
+  </data>
+  <data name="Phieu_NhapSanPhamMoi_sModifiedBy" xml:space="preserve">
+    <value>Người sửa</value>
+  </data>
+  <data name="Phieu_NhapSanPhamMoi_sNguoiGiao" xml:space="preserve">
+    <value>Người giao</value>
+  </data>
+  <data name="Phieu_NhapSanPhamMoi_sXuatXu" xml:space="preserve">
+    <value>Xuất xứ</value>
+  </data>
+  <data name="Phieu_NhapSanPham_CT" xml:space="preserve">
+    <value>Chi tiết phiếu nhập sản phẩm</value>
+  </data>
+  <data name="Phieu_NhapSanPham_CT_dCreatedDate" xml:space="preserve">
+    <value>Ngày tạo</value>
+  </data>
+  <data name="Phieu_NhapSanPham_CT_dModifiedDate" xml:space="preserve">
+    <value>Ngày sửa</value>
+  </data>
+  <data name="Phieu_NhapSanPham_CT_PhuKien" xml:space="preserve">
+    <value>Chi tiết phụ kiện trong phiếu nhập sản phẩm</value>
+  </data>
+  <data name="Phieu_NhapSanPham_CT_PhuKiendCreatedDate" xml:space="preserve">
+    <value>Ngày tạo</value>
+  </data>
+  <data name="Phieu_NhapSanPham_CT_PhuKiendModifiedDate" xml:space="preserve">
+    <value>Ngày sửa</value>
+  </data>
+  <data name="Phieu_NhapSanPham_CT_PhuKienrDonGia" xml:space="preserve">
+    <value>Đơn giá phụ kiện</value>
+  </data>
+  <data name="Phieu_NhapSanPham_CT_PhuKienrSoLuong" xml:space="preserve">
+    <value>Số lượng phụ kiện</value>
+  </data>
+  <data name="Phieu_NhapSanPham_CT_PhuKienrThanhTien" xml:space="preserve">
+    <value>Thành tiền</value>
+  </data>
+  <data name="Phieu_NhapSanPham_CT_PhuKiensCreatedBy" xml:space="preserve">
+    <value>Người tạo</value>
+  </data>
+  <data name="Phieu_NhapSanPham_CT_PhuKiensDM_DonViTinh_Id" xml:space="preserve">
+    <value>ID đơn vị tính</value>
+  </data>
+  <data name="Phieu_NhapSanPham_CT_PhuKiensDM_PhuKien_Id" xml:space="preserve">
+    <value>ID phụ kiện</value>
+  </data>
+  <data name="Phieu_NhapSanPham_CT_PhuKiensDM_SanPham_Id" xml:space="preserve">
+    <value>ID sản phẩm</value>
+  </data>
+  <data name="Phieu_NhapSanPham_CT_PhuKiensGhiChu" xml:space="preserve">
+    <value>Ghi chú</value>
+  </data>
+  <data name="Phieu_NhapSanPham_CT_PhuKiensModifiedBy" xml:space="preserve">
+    <value>Người sửa</value>
+  </data>
+  <data name="Phieu_NhapSanPham_CT_PhuKiensXuatXu" xml:space="preserve">
+    <value>Xuất xứ</value>
+  </data>
+  <data name="Phieu_NhapSanPham_CT_PhuKien_sPhieu_NhapSanPham_CT_Id" xml:space="preserve">
+    <value>ID phiếu nhập sản phẩm</value>
+  </data>
+  <data name="Phieu_NhapSanPham_CT_rDonGia" xml:space="preserve">
+    <value>Đơn giá</value>
+  </data>
+  <data name="Phieu_NhapSanPham_CT_rSoLuong" xml:space="preserve">
+    <value>Số lượng</value>
+  </data>
+  <data name="Phieu_NhapSanPham_CT_rThanhTien" xml:space="preserve">
+    <value>Thành tiền</value>
+  </data>
+  <data name="Phieu_NhapSanPham_CT_sCreatedBy" xml:space="preserve">
+    <value>Người tạo</value>
+  </data>
+  <data name="Phieu_NhapSanPham_CT_sDM_DonViTinh_Id" xml:space="preserve">
+    <value>ID đơn vị tính</value>
+  </data>
+  <data name="Phieu_NhapSanPham_CT_sDM_DonVi_Id_DonViNhap" xml:space="preserve">
+    <value>ID đơn vị nhập</value>
+  </data>
+  <data name="Phieu_NhapSanPham_CT_sDM_Kho_Id" xml:space="preserve">
+    <value>ID kho</value>
+  </data>
+  <data name="Phieu_NhapSanPham_CT_sDM_SanPham_Id" xml:space="preserve">
+    <value>ID sản phẩm</value>
+  </data>
+  <data name="Phieu_NhapSanPham_CT_sGhiChu" xml:space="preserve">
+    <value>Ghi chú</value>
+  </data>
+  <data name="Phieu_NhapSanPham_CT_sKH_NhapSanPhamMoi_Id" xml:space="preserve">
+    <value>ID kế hoạch nhập sản phẩm mới</value>
+  </data>
+  <data name="Phieu_NhapSanPham_CT_sModifiedBy" xml:space="preserve">
+    <value>Người sửa</value>
+  </data>
+  <data name="Phieu_NhapSanPham_CT_sXuatXu" xml:space="preserve">
+    <value>Xuất xứ</value>
+  </data>
+  <data name="Phieu_XuatSanPham" xml:space="preserve">
+    <value>Phiếu xuất sản phẩm</value>
+  </data>
+  <data name="Phieu_XuatSanPham_CT" xml:space="preserve">
+    <value>Chi tiết phiếu xuất sản phẩm</value>
+  </data>
+  <data name="Phieu_XuatSanPham_CT_dCreatedDate" xml:space="preserve">
+    <value>Ngày tạo</value>
+  </data>
+  <data name="Phieu_XuatSanPham_CT_dModifiedDate" xml:space="preserve">
+    <value>Ngày sửa</value>
+  </data>
+  <data name="Phieu_XuatSanPham_CT_PhuKien" xml:space="preserve">
+    <value>Chi tiết phụ kiện trong phiếu xuất sản phẩm</value>
+  </data>
+  <data name="Phieu_XuatSanPham_CT_PhuKien_dCreatedDate" xml:space="preserve">
+    <value>Ngày tạo</value>
+  </data>
+  <data name="Phieu_XuatSanPham_CT_PhuKien_dModifiedDate" xml:space="preserve">
+    <value>Ngày sửa</value>
+  </data>
+  <data name="Phieu_XuatSanPham_CT_PhuKien_rDonGia" xml:space="preserve">
+    <value>Đơn giá</value>
+  </data>
+  <data name="Phieu_XuatSanPham_CT_PhuKien_rSoLuong" xml:space="preserve">
+    <value>Số lượng</value>
+  </data>
+  <data name="Phieu_XuatSanPham_CT_PhuKien_rThanhTien" xml:space="preserve">
+    <value>Thành tiền</value>
+  </data>
+  <data name="Phieu_XuatSanPham_CT_PhuKien_sCreatedBy" xml:space="preserve">
+    <value>Người tạo</value>
+  </data>
+  <data name="Phieu_XuatSanPham_CT_PhuKien_sDM_DonViTinh_Id" xml:space="preserve">
+    <value>ID đơn vị tính</value>
+  </data>
+  <data name="Phieu_XuatSanPham_CT_PhuKien_sDM_PhuKien_Id" xml:space="preserve">
+    <value>ID phụ kiện</value>
+  </data>
+  <data name="Phieu_XuatSanPham_CT_PhuKien_sDM_SanPham_Id" xml:space="preserve">
+    <value>ID sản phẩm</value>
+  </data>
+  <data name="Phieu_XuatSanPham_CT_PhuKien_sGhiChu" xml:space="preserve">
+    <value>Ghi chú</value>
+  </data>
+  <data name="Phieu_XuatSanPham_CT_PhuKien_sModifiedBy" xml:space="preserve">
+    <value>Người sửa</value>
+  </data>
+  <data name="Phieu_XuatSanPham_CT_PhuKien_sPhieu_XuatSanPham_CT_Id" xml:space="preserve">
+    <value>ID phiếu xuất sản phẩm chi tiết</value>
+  </data>
+  <data name="Phieu_XuatSanPham_CT_PhuKien_sXuatXu" xml:space="preserve">
+    <value>Xuất xứ</value>
+  </data>
+  <data name="Phieu_XuatSanPham_CT_rDonGia" xml:space="preserve">
+    <value>Đơn giá</value>
+  </data>
+  <data name="Phieu_XuatSanPham_CT_rSoLuong" xml:space="preserve">
+    <value>Số lượng</value>
+  </data>
+  <data name="Phieu_XuatSanPham_CT_rThanhTien" xml:space="preserve">
+    <value>Thành tiền</value>
+  </data>
+  <data name="Phieu_XuatSanPham_CT_sCreatedBy" xml:space="preserve">
+    <value>Người tạo</value>
+  </data>
+  <data name="Phieu_XuatSanPham_CT_sDM_DonViTinh_Id" xml:space="preserve">
+    <value>ID đơn vị tính</value>
+  </data>
+  <data name="Phieu_XuatSanPham_CT_sDM_MangLienLac_Id" xml:space="preserve">
+    <value>ID mạng liên lạc</value>
+  </data>
+  <data name="Phieu_XuatSanPham_CT_sDM_SanPham_Id" xml:space="preserve">
+    <value>ID sản phẩm</value>
+  </data>
+  <data name="Phieu_XuatSanPham_CT_sGhiChu" xml:space="preserve">
+    <value>Ghi chú</value>
+  </data>
+  <data name="Phieu_XuatSanPham_CT_sMaVach" xml:space="preserve">
+    <value>Mã vạch</value>
+  </data>
+  <data name="Phieu_XuatSanPham_CT_sModifiedBy" xml:space="preserve">
+    <value>Người sửa</value>
+  </data>
+  <data name="Phieu_XuatSanPham_CT_sPhieu_XuatSanPham_Id" xml:space="preserve">
+    <value>ID phiếu xuất sản phẩm</value>
+  </data>
+  <data name="Phieu_XuatSanPham_CT_sSerial" xml:space="preserve">
+    <value>Số serial</value>
+  </data>
+  <data name="Phieu_XuatSanPham_dCreatedDate" xml:space="preserve">
+    <value>Ngày tạo</value>
+  </data>
+  <data name="Phieu_XuatSanPham_dModifiedDate" xml:space="preserve">
+    <value>Ngày sửa</value>
+  </data>
+  <data name="Phieu_XuatSanPham_dNgayPhieu_XuatSanPham" xml:space="preserve">
+    <value>Ngày phiếu xuất sản phẩm</value>
+  </data>
+  <data name="Phieu_XuatSanPham_rDonGia" xml:space="preserve">
+    <value>Đơn giá</value>
+  </data>
+  <data name="Phieu_XuatSanPham_rSoLuong" xml:space="preserve">
+    <value>Số lượng</value>
+  </data>
+  <data name="Phieu_XuatSanPham_rThanhTien" xml:space="preserve">
+    <value>Thành tiền</value>
+  </data>
+  <data name="Phieu_XuatSanPham_sCreatedBy" xml:space="preserve">
+    <value>Người tạo</value>
+  </data>
+  <data name="Phieu_XuatSanPham_sDM_CanBo_Id_NguoiGiao" xml:space="preserve">
+    <value>ID cán bộ giao</value>
+  </data>
+  <data name="Phieu_XuatSanPham_sDM_CanBo_Id_NguoiKy" xml:space="preserve">
+    <value>ID cán bộ ký</value>
+  </data>
+  <data name="Phieu_XuatSanPham_sDM_CanBo_Id_NguoiLapPhieu" xml:space="preserve">
+    <value>ID người lập phiếu</value>
+  </data>
+  <data name="Phieu_XuatSanPham_sDM_CanBo_Id_NguoiNhan" xml:space="preserve">
+    <value>ID cán bộ nhận</value>
+  </data>
+  <data name="Phieu_XuatSanPham_sDM_DonVi_Id_Nhan" xml:space="preserve">
+    <value>ID đơn vị nhận</value>
+  </data>
+  <data name="Phieu_XuatSanPham_sDM_DonVi_Id_Xuat" xml:space="preserve">
+    <value>ID đơn vị xuất</value>
+  </data>
+  <data name="Phieu_XuatSanPham_sDM_Kho_Id_Nhan" xml:space="preserve">
+    <value>ID kho nhận</value>
+  </data>
+  <data name="Phieu_XuatSanPham_sDM_Kho_Id_Xuat" xml:space="preserve">
+    <value>ID kho xuất</value>
+  </data>
+  <data name="Phieu_XuatSanPham_sGhiChu" xml:space="preserve">
+    <value>Ghi chú</value>
+  </data>
+  <data name="Phieu_XuatSanPham_sKH_XuatSanPham_Id_CanCu" xml:space="preserve">
+    <value>ID căn cứ kế hoạch xuất sản phẩm</value>
+  </data>
+  <data name="Phieu_XuatSanPham_sMaPhieu_XuatSanPham" xml:space="preserve">
+    <value>Mã phiếu xuất sản phẩm</value>
+  </data>
+  <data name="Phieu_XuatSanPham_sModifiedBy" xml:space="preserve">
+    <value>Người sửa</value>
+  </data>
+  <data name="Phieu_XuatSanPham_sXuatXu" xml:space="preserve">
+    <value>Xuất xứ</value>
+  </data>
+  <data name="RolePermission" xml:space="preserve">
+    <value>Quyền vai trò</value>
+  </data>
+  <data name="RolePermission_FormId" xml:space="preserve">
+    <value>ID form</value>
+  </data>
+  <data name="RolePermission_Permission" xml:space="preserve">
+    <value>Tên quyền</value>
+  </data>
+  <data name="RolePermission_RoleId" xml:space="preserve">
+    <value>ID vai trò</value>
+  </data>
+  <data name="SysMenu" xml:space="preserve">
+    <value>Menu hệ thống</value>
+  </data>
+  <data name="SysMenu_Active" xml:space="preserve">
+    <value>Kích hoạt menu</value>
+  </data>
+  <data name="SysMenu_FormName" xml:space="preserve">
+    <value>Tên form</value>
+  </data>
+  <data name="SysMenu_IconCls" xml:space="preserve">
+    <value>Icon</value>
+  </data>
+  <data name="SysMenu_MaxPermission" xml:space="preserve">
+    <value>Quyền tối đa</value>
+  </data>
+  <data name="SysMenu_MenuName" xml:space="preserve">
+    <value>Tên menu</value>
+  </data>
+  <data name="SysMenu_ParentId" xml:space="preserve">
+    <value>ID menu cha</value>
+  </data>
+  <data name="SysMenu_RoleId" xml:space="preserve">
+    <value>ID vai trò</value>
+  </data>
+  <data name="SysMenu_SortOrder" xml:space="preserve">
+    <value>Sắp xếp hiển thị</value>
+  </data>
+  <data name="SysRoles" xml:space="preserve">
+    <value>Quyền hệ thống</value>
+  </data>
+  <data name="SysRoles_Active" xml:space="preserve">
+    <value>Kích hoạt vai trò</value>
+  </data>
+  <data name="SysRoles_CreatedBy" xml:space="preserve">
+    <value>Người tạo</value>
+  </data>
+  <data name="SysRoles_CreatedDate" xml:space="preserve">
+    <value>Ngày tạo</value>
+  </data>
+  <data name="SysRoles_DictionaryKey" xml:space="preserve">
+    <value>Khóa từ điển</value>
+  </data>
+  <data name="SysRoles_IsSystem" xml:space="preserve">
+    <value>Kiểm tra là vai trò hệ thống hay không</value>
+  </data>
+  <data name="SysRoles_ModifiedBy" xml:space="preserve">
+    <value>Người sửa</value>
+  </data>
+  <data name="SysRoles_ModifiedDate" xml:space="preserve">
+    <value>Ngày sửa</value>
+  </data>
+  <data name="SysRoles_RoleName" xml:space="preserve">
+    <value>Tên vai trò</value>
+  </data>
+  <data name="SysUser" xml:space="preserve">
+    <value>Người dùng hệ thống</value>
+  </data>
+  <data name="SysUser_Active" xml:space="preserve">
+    <value>Kích hoạt người dùng hay không</value>
+  </data>
+  <data name="SysUser_ChangePass" xml:space="preserve">
+    <value>Thay đổi mật khẩu người dùng</value>
+  </data>
+  <data name="SysUser_dCreatedDate" xml:space="preserve">
+    <value>Ngày tạo</value>
+  </data>
+  <data name="SysUser_dModifiedDate" xml:space="preserve">
+    <value>Ngày sửa</value>
+  </data>
+  <data name="SysUser_Fullname" xml:space="preserve">
+    <value>Tên đầy đủ</value>
+  </data>
+  <data name="SysUser_OrganizationUnitId" xml:space="preserve">
+    <value>ID đơn vị tổ chức</value>
+  </data>
+  <data name="SysUser_Password" xml:space="preserve">
+    <value>Mật khẩu</value>
+  </data>
+  <data name="SysUser_Picture" xml:space="preserve">
+    <value>Ảnh người dùng</value>
+  </data>
+  <data name="SysUser_RoleId" xml:space="preserve">
+    <value>ID vai trò</value>
+  </data>
+  <data name="SysUser_sCreatedBy" xml:space="preserve">
+    <value>Người tạo</value>
+  </data>
+  <data name="SysUser_sModifiedBy" xml:space="preserve">
+    <value>Người sửa</value>
+  </data>
+  <data name="SysUser_Username" xml:space="preserve">
+    <value>Tên người dùng</value>
+  </data>
+</root>

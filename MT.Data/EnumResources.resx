@@ -1,0 +1,426 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="bKepChi_Co" xml:space="preserve">
+    <value>Có</value>
+  </data>
+  <data name="bKepChi_Khong" xml:space="preserve">
+    <value>Không</value>
+  </data>
+  <data name="iDonViThoiGianBaoHanh_Nam" xml:space="preserve">
+    <value>Năm</value>
+  </data>
+  <data name="iDonViThoiGianBaoHanh_Ngay" xml:space="preserve">
+    <value>Ngày</value>
+  </data>
+  <data name="iDonViThoiGianBaoHanh_Quy" xml:space="preserve">
+    <value>Quý</value>
+  </data>
+  <data name="iDonViThoiGianBaoHanh_Thang" xml:space="preserve">
+    <value>Tháng</value>
+  </data>
+  <data name="iDonViThoiGianHieuLuc_Nam" xml:space="preserve">
+    <value>Năm</value>
+  </data>
+  <data name="iDonViThoiGianHieuLuc_Ngay" xml:space="preserve">
+    <value>Ngày</value>
+  </data>
+  <data name="iDonViThoiGianHieuLuc_Quy" xml:space="preserve">
+    <value>Quý</value>
+  </data>
+  <data name="iDonViThoiGianHieuLuc_Thang" xml:space="preserve">
+    <value>Tháng</value>
+  </data>
+  <data name="iLoaiKH_ct" xml:space="preserve">
+    <value>TBMM-Nguồn CT</value>
+  </data>
+  <data name="iLoaiKH_khac" xml:space="preserve">
+    <value>Khác</value>
+  </data>
+  <data name="iLoaiKH_tlmm" xml:space="preserve">
+    <value>Tài Liệu KTMM</value>
+  </data>
+  <data name="iLoaiKH_tx" xml:space="preserve">
+    <value>TBMM-Nguồn TX</value>
+  </data>
+  <data name="iLoaiNhapBaoHanh_NhapBH" xml:space="preserve">
+    <value>Nhập nhận về bảo hành</value>
+  </data>
+  <data name="iLoaiNhapBaoHanh_NhapNhanVeSauBH" xml:space="preserve">
+    <value>Nhập nhận về sau bảo hành</value>
+  </data>
+  <data name="iLoaiNhapSuaChua_NhapSCNhanVeSauSC" xml:space="preserve">
+    <value>Nhập nhận về sau sửa chữa</value>
+  </data>
+  <data name="iLoaiNhapSuaChua_NhapVaoSC" xml:space="preserve">
+    <value>Nhập nhận về sửa chữa</value>
+  </data>
+  <data name="iLoaiPhieu_DauKy" xml:space="preserve">
+    <value>Số dư đầu kỳ</value>
+  </data>
+  <data name="iLoaiPhieu_NhapBH" xml:space="preserve">
+    <value>Nhập nhận về bảo hành</value>
+  </data>
+  <data name="iLoaiPhieu_NhapMoi" xml:space="preserve">
+    <value>Phiếu nhập mới</value>
+  </data>
+  <data name="iLoaiPhieu_NhapMuon" xml:space="preserve">
+    <value>Phiếu nhập mượn</value>
+  </data>
+  <data name="iLoaiPhieu_NhapNhanVe" xml:space="preserve">
+    <value>Phiếu nhập về sau mượn</value>
+  </data>
+  <data name="iLoaiPhieu_NhapNhanVeSauBH" xml:space="preserve">
+    <value>Phiếu nhập về sau bảo hành</value>
+  </data>
+  <data name="iLoaiPhieu_NhapNhanVeSauCĐ" xml:space="preserve">
+    <value>Phiếu nhập vào sau cài đặt</value>
+  </data>
+  <data name="iLoaiPhieu_NhapSCNhanVeSauSC" xml:space="preserve">
+    <value>Phiếu nhập về sau sửa chữa</value>
+  </data>
+  <data name="iLoaiPhieu_NhapSP" xml:space="preserve">
+    <value>Phiếu nhập</value>
+  </data>
+  <data name="iLoaiPhieu_NhapThuHoi" xml:space="preserve">
+    <value>Phiếu nhập vào thu hồi</value>
+  </data>
+  <data name="iLoaiPhieu_NhapVaoCĐ" xml:space="preserve">
+    <value>Phiếu nhập vào cài đặt</value>
+  </data>
+  <data name="iLoaiPhieu_NhapVaoSC" xml:space="preserve">
+    <value>Phiếu nhập vào sửa chữa</value>
+  </data>
+  <data name="iLoaiPhieu_XuatBH" xml:space="preserve">
+    <value>Phiếu xuất đi bảo hành</value>
+  </data>
+  <data name="iLoaiPhieu_XuatHuy" xml:space="preserve">
+    <value>Phiếu xuất tiêu hủy</value>
+  </data>
+  <data name="iLoaiPhieu_XuatMuon" xml:space="preserve">
+    <value>Phiếu xuất cho mượn</value>
+  </data>
+  <data name="iLoaiPhieu_XuatSCTraVeSauSC" xml:space="preserve">
+    <value>Phiếu xuất trả về sau sửa chữa</value>
+  </data>
+  <data name="iLoaiPhieu_XuatSCĐi" xml:space="preserve">
+    <value>Phiếu xuất đi sửa chữa</value>
+  </data>
+  <data name="iLoaiPhieu_XuatSP" xml:space="preserve">
+    <value>Phiếu xuất</value>
+  </data>
+  <data name="iLoaiPhieu_XuatThuHoi" xml:space="preserve">
+    <value>Phiếu xuất thu hồi</value>
+  </data>
+  <data name="iLoaiPhieu_XuatTra" xml:space="preserve">
+    <value>Phiếu xuất trả về sau mượn</value>
+  </data>
+  <data name="iLoaiPhieu_XuatTraSauBH" xml:space="preserve">
+    <value>Phiếu xuất trả về sau bảo hành</value>
+  </data>
+  <data name="iLoaiPhieu_XuatTraSauCĐ" xml:space="preserve">
+    <value>Phiếu xuất trả về sau cài đặt</value>
+  </data>
+  <data name="iLoaiPhieu_XuatĐiCĐ" xml:space="preserve">
+    <value>Phiếu xuất đi cài đặt</value>
+  </data>
+  <data name="iLoaiXuatBaoHanh_XuatBH" xml:space="preserve">
+    <value>Xuất đi bảo hành</value>
+  </data>
+  <data name="iLoaiXuatBaoHanh_XuatTraSauBH" xml:space="preserve">
+    <value>Xuất trả về sau bảo hành</value>
+  </data>
+  <data name="iLoaiXuatSuaChua_XuatSCTraVeSauSC" xml:space="preserve">
+    <value>Xuất trả về sau sửa chữa</value>
+  </data>
+  <data name="iLoaiXuatSuaChua_XuatSCĐi" xml:space="preserve">
+    <value>Xuất đi sửa chữa</value>
+  </data>
+  <data name="ImportDataType_DM_ChungThuSo" xml:space="preserve">
+    <value>Danh mục chứng thư số</value>
+  </data>
+  <data name="ImportDataType_DM_SanPham" xml:space="preserve">
+    <value>Danh mục sản phẩm</value>
+  </data>
+  <data name="ImportDataType_DM_ThamSoMatMa" xml:space="preserve">
+    <value>Danh mục tham số mật mã</value>
+  </data>
+  <data name="ImportDataType_SoKho" xml:space="preserve">
+    <value>Tồn đầu kỳ</value>
+  </data>
+  <data name="iNhapVeKho_LuuKho" xml:space="preserve">
+    <value>Nhập về kho</value>
+  </data>
+  <data name="iNhapVeKho_Sudung" xml:space="preserve">
+    <value>Nhập sử dụng</value>
+  </data>
+  <data name="iTCNhapCĐ_NhapCĐ" xml:space="preserve">
+    <value>Nhập nhận về cài đặt</value>
+  </data>
+  <data name="iTCNhapCĐ_NhapLaiSauCĐ" xml:space="preserve">
+    <value>Nhập nhận về sau cài đặt</value>
+  </data>
+  <data name="iTCNhapTH_NhapThuHoi" xml:space="preserve">
+    <value>Nhập thu hồi</value>
+  </data>
+  <data name="iTCNhap_NhapMuon" xml:space="preserve">
+    <value>Nhập nhận về sử dụng</value>
+  </data>
+  <data name="iTCNhap_NhapTra" xml:space="preserve">
+    <value>Nhập nhận về sau khi cho mượn</value>
+  </data>
+  <data name="iTCXuatCĐ_XuatCĐTraVeSauCĐ" xml:space="preserve">
+    <value>Xuất trả về sau cài đặt</value>
+  </data>
+  <data name="iTCXuatCĐ_XuatCĐĐi" xml:space="preserve">
+    <value>Xuất đi cài đặt</value>
+  </data>
+  <data name="iTCXuatTH_XuatHuy" xml:space="preserve">
+    <value>Xuất tiêu hủy</value>
+  </data>
+  <data name="iTCXuatTH_XuatThuHoi" xml:space="preserve">
+    <value>Xuất thu hồi</value>
+  </data>
+  <data name="iTCXuat_XuatMuon" xml:space="preserve">
+    <value>Xuất cho mượn</value>
+  </data>
+  <data name="iTCXuat_XuatTra" xml:space="preserve">
+    <value>Xuất trả sản phẩm</value>
+  </data>
+  <data name="iTrangThaiDuyetKHCĐSP_ChoDuyet" xml:space="preserve">
+    <value>Chờ duyệt</value>
+  </data>
+  <data name="iTrangThaiDuyetKHCĐSP_DongYDuyet" xml:space="preserve">
+    <value>Đã phê duyệt</value>
+  </data>
+  <data name="iTrangThaiDuyetKHCĐSP_TuChoiDuyet" xml:space="preserve">
+    <value>Từ chối duyệt</value>
+  </data>
+  <data name="iTrangThaiDuyetKHNM_ChoDuyet" xml:space="preserve">
+    <value>Chờ duyệt</value>
+  </data>
+  <data name="iTrangThaiDuyetKHNM_DongYDuyet" xml:space="preserve">
+    <value>Đã phê duyệt</value>
+  </data>
+  <data name="iTrangThaiDuyetKHNM_TuChoiDuyet" xml:space="preserve">
+    <value>Từ chối duyệt</value>
+  </data>
+  <data name="iTrangThaiDuyetPNBH_ChoDuyet" xml:space="preserve">
+    <value>Chờ duyệt</value>
+  </data>
+  <data name="iTrangThaiDuyetPNBH_DongYDuyet" xml:space="preserve">
+    <value>Đồng ý duyệt</value>
+  </data>
+  <data name="iTrangThaiDuyetPNBH_TuChoiDuyet" xml:space="preserve">
+    <value>Từ chối duyệt</value>
+  </data>
+  <data name="iTrangThaiDuyetPNM_ChoDuyet" xml:space="preserve">
+    <value>Chờ duyệt</value>
+  </data>
+  <data name="iTrangThaiDuyetPNM_DongYDuyet" xml:space="preserve">
+    <value>Đã phê duyệt</value>
+  </data>
+  <data name="iTrangThaiDuyetPNM_TuChoiDuyet" xml:space="preserve">
+    <value>Từ chối duyệt</value>
+  </data>
+  <data name="iTrangThaiDuyetPNSC_ChoDuyet" xml:space="preserve">
+    <value>Chờ duyệt</value>
+  </data>
+  <data name="iTrangThaiDuyetPNSC_DongYDuyet" xml:space="preserve">
+    <value>Đồng ý duyệt</value>
+  </data>
+  <data name="iTrangThaiDuyetPNSC_TuChoiDuyet" xml:space="preserve">
+    <value>Từ chối duyệt</value>
+  </data>
+  <data name="iTrangThaiDuyetPXBH_ChoDuyet" xml:space="preserve">
+    <value>Chờ duyệt</value>
+  </data>
+  <data name="iTrangThaiDuyetPXBH_DongYDuyet" xml:space="preserve">
+    <value>Đồng ý duyệt</value>
+  </data>
+  <data name="iTrangThaiDuyetPXBH_TuChoiDuyet" xml:space="preserve">
+    <value>Từ chối duyệt</value>
+  </data>
+  <data name="iTrangThaiDuyetPXCĐSP_ChoDuyet" xml:space="preserve">
+    <value>Chờ duyệt</value>
+  </data>
+  <data name="iTrangThaiDuyetPXCĐSP_DongYDuyet" xml:space="preserve">
+    <value>Đã phê duyệt</value>
+  </data>
+  <data name="iTrangThaiDuyetPXCĐSP_TuChoiDuyet" xml:space="preserve">
+    <value>Từ chối duyệt</value>
+  </data>
+  <data name="iTrangThaiDuyetPXSC_ChoDuyet" xml:space="preserve">
+    <value>Chờ duyệt</value>
+  </data>
+  <data name="iTrangThaiDuyetPXSC_DongYDuyet" xml:space="preserve">
+    <value>Đồng ý duyệt</value>
+  </data>
+  <data name="iTrangThaiDuyetPXSC_TuChoiDuyet" xml:space="preserve">
+    <value>Từ chối duyệt</value>
+  </data>
+  <data name="iTrangThaiThucHienKHCDSP_ChuaThucHien" xml:space="preserve">
+    <value>Chưa thực hiện</value>
+  </data>
+  <data name="iTrangThaiThucHienKHCDSP_DaHoanThanh" xml:space="preserve">
+    <value>Đã hoàn thành</value>
+  </data>
+  <data name="iTrangThaiThucHienKHCDSP_DangThucHien" xml:space="preserve">
+    <value>Đang thực hiện</value>
+  </data>
+  <data name="iTrangThaiThucHienKHNM_ChuaThucHien" xml:space="preserve">
+    <value>Chưa thực hiện</value>
+  </data>
+  <data name="iTrangThaiThucHienKHNM_DaHoanThanh" xml:space="preserve">
+    <value>Đã hoàn thành</value>
+  </data>
+  <data name="iTrangThaiThucHienKHNM_DangThucHien" xml:space="preserve">
+    <value>Đang thực hiện</value>
+  </data>
+  <data name="iTrangThaiThucHienKHSC_ChuaThucHien" xml:space="preserve">
+    <value>Chưa thực hiện</value>
+  </data>
+  <data name="iTrangThaiThucHienKHSC_DaHoanThanh" xml:space="preserve">
+    <value>Đã hoàn thành</value>
+  </data>
+  <data name="iTrangThaiThucHienKHSC_DangThucHien" xml:space="preserve">
+    <value>Đang thực hiện</value>
+  </data>
+  <data name="TrangThaiTimKiemSanPham_ChuaSuDung" xml:space="preserve">
+    <value>Chưa sử dụng</value>
+  </data>
+  <data name="TrangThaiTimKiemSanPham_DangBaoHanh" xml:space="preserve">
+    <value>Đang bảo hành</value>
+  </data>
+  <data name="TrangThaiTimKiemSanPham_DangChoMuon" xml:space="preserve">
+    <value>Đang cho mượn</value>
+  </data>
+  <data name="TrangThaiTimKiemSanPham_DangSuaChua" xml:space="preserve">
+    <value>Đang sửa chữa</value>
+  </data>
+  <data name="TrangThaiTimKiemSanPham_DangSuDung" xml:space="preserve">
+    <value>Đang sử dụng</value>
+  </data>
+  <data name="TrangThaiTimKiemSanPham_DaThuHoiThanhLy" xml:space="preserve">
+    <value>Đã thu hồi/thanh lý</value>
+  </data>
+  <data name="TrangThaiTimKiemSanPham_DaTieuHuy" xml:space="preserve">
+    <value>Đã tiêu hủy</value>
+  </data>
+</root>

@@ -1,0 +1,640 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6EEB95B9-6E2A-48F8-B7D0-B2FA78E31196}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MTControl</RootNamespace>
+    <AssemblyName>MTControl</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\OutputLibrary\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Library\Devexpress\DevExpress.BonusSkins.v19.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Charts.Designer.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Library\Devexpress\DevExpress.Charts.Designer.v19.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Charts.v19.2.Core, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Library\Devexpress\DevExpress.Charts.v19.2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.CodeConverter.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Library\Devexpress\DevExpress.CodeConverter.v19.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.CodeParser.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Library\Devexpress\DevExpress.CodeParser.v19.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Data.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Library\Devexpress\DevExpress.Data.v19.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.DataAccess.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Library\Devexpress\DevExpress.DataAccess.v19.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.DataAccess.v19.2.UI, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Library\Devexpress\DevExpress.DataAccess.v19.2.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Diagram.v19.2.Core, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Library\Devexpress\DevExpress.Diagram.v19.2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Dialogs.v19.2.Core, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Library\Devexpress\DevExpress.Dialogs.v19.2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Docs.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Library\Devexpress\DevExpress.Docs.v19.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Images.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Library\Devexpress\DevExpress.Images.v19.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Office.v19.2.Core, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Library\Devexpress\DevExpress.Office.v19.2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Pdf.v19.2.Core, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Library\Devexpress\DevExpress.Pdf.v19.2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Pdf.v19.2.Drawing, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Library\Devexpress\DevExpress.Pdf.v19.2.Drawing.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Persistent.Base.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Library\Devexpress\DevExpress.Persistent.Base.v19.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Persistent.BaseImpl.EF.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Library\Devexpress\DevExpress.Persistent.BaseImpl.EF.v19.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Persistent.BaseImpl.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Library\Devexpress\DevExpress.Persistent.BaseImpl.v19.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.PivotGrid.v19.2.Core, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Library\Devexpress\DevExpress.PivotGrid.v19.2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v19.2.Core, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Library\Devexpress\DevExpress.Printing.v19.2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.RichEdit.v19.2.Core, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Library\Devexpress\DevExpress.RichEdit.v19.2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.RichEdit.v19.2.Export, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Library\Devexpress\DevExpress.RichEdit.v19.2.Export.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Snap.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Library\Devexpress\DevExpress.Snap.v19.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Snap.v19.2.Core, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Library\Devexpress\DevExpress.Snap.v19.2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Snap.v19.2.Extensions, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Library\Devexpress\DevExpress.Snap.v19.2.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Sparkline.v19.2.Core, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Library\Devexpress\DevExpress.Sparkline.v19.2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.SpellChecker.v19.2.Core, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Library\Devexpress\DevExpress.SpellChecker.v19.2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Spreadsheet.v19.2.Core, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Library\Devexpress\DevExpress.Spreadsheet.v19.2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.TreeMap.v19.2.Core, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Library\Devexpress\DevExpress.TreeMap.v19.2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Tutorials.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Library\Devexpress\DevExpress.Tutorials.v19.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Library\Devexpress\DevExpress.Utils.v19.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v19.2.UI, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Library\Devexpress\DevExpress.Utils.v19.2.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Library\Devexpress\DevExpress.XtraBars.v19.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Library\Devexpress\DevExpress.XtraCharts.v19.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v19.2.Extensions, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Library\Devexpress\DevExpress.XtraCharts.v19.2.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v19.2.UI, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Library\Devexpress\DevExpress.XtraCharts.v19.2.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v19.2.Web, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Library\Devexpress\DevExpress.XtraCharts.v19.2.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v19.2.Wizard, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Library\Devexpress\DevExpress.XtraCharts.v19.2.Wizard.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraDiagram.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Library\Devexpress\DevExpress.XtraDiagram.v19.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraDialogs.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Library\Devexpress\DevExpress.XtraDialogs.v19.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Library\Devexpress\DevExpress.XtraEditors.v19.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraGantt.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Library\Devexpress\DevExpress.XtraGantt.v19.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Library\Devexpress\DevExpress.XtraGrid.v19.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraLayout.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Library\Devexpress\DevExpress.XtraLayout.v19.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraMap.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Library\Devexpress\DevExpress.XtraMap.v19.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraNavBar.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Library\Devexpress\DevExpress.XtraNavBar.v19.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraPdfViewer.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Library\Devexpress\DevExpress.XtraPdfViewer.v19.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraPivotGrid.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Library\Devexpress\DevExpress.XtraPivotGrid.v19.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Library\Devexpress\DevExpress.XtraPrinting.v19.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraRichEdit.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Library\Devexpress\DevExpress.XtraRichEdit.v19.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraTreeList.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Library\Devexpress\DevExpress.XtraTreeList.v19.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraTreeMap.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Library\Devexpress\DevExpress.XtraTreeMap.v19.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraVerticalGrid.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Library\Devexpress\DevExpress.XtraVerticalGrid.v19.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraWizard.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Library\Devexpress\DevExpress.XtraWizard.v19.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=8.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Lib\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Http.Formatting, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Lib\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.XML" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Constant.cs" />
+    <Compile Include="CustomEvent\CustomChangingEventArgs.cs" />
+    <Compile Include="Define\DefineSourceForCombo.cs" />
+    <Compile Include="IEditControl.cs" />
+    <Compile Include="Localizer\MyGridLocalizer.cs" />
+    <Compile Include="Localizer\VietnameEditorsLocalizer.cs" />
+    <Compile Include="MColumnDefine.cs" />
+    <Compile Include="MButtonName.cs" />
+    <Compile Include="MHeight.cs" />
+    <Compile Include="Enumaration.cs" />
+    <Compile Include="IControl.cs" />
+    <Compile Include="MColor.cs" />
+    <Compile Include="MCommon.cs" />
+    <Compile Include="MFont.cs" />
+    <Compile Include="MMessage.cs" />
+    <Compile Include="Models\FilterObject.cs" />
+    <Compile Include="MSize.cs" />
+    <Compile Include="MViewPaging.cs" />
+    <Compile Include="ObjectEnum\DisplayEnum.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Validate\EmailValidationRule.cs" />
+    <Compile Include="Validate\SpinEditValidationRule.cs" />
+    <Compile Include="Validate\MLookUpEditConditionValidationRule.cs" />
+    <Compile Include="WrapControl\Column\MRepositoryItemButtonEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WrapControl\Column\MRepositoryItemCheckedComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WrapControl\Column\MRepositoryItemTreeLookUpEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WrapControl\Column\MRepositoryItemGridLookUpEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WrapControl\Column\MRepositorySpinEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WrapControl\Column\MRepositoryComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WrapControl\Column\MRepositoryDateEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WrapControl\Column\MRepositoryTextEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WrapControl\Column\MGridColumn.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WrapControl\Column\MRepositoryItemLookUpEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WrapControl\MDataNavigatorPaging.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WrapControl\MDataNavigatorPaging.Designer.cs">
+      <DependentUpon>MDataNavigatorPaging.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WrapControl\MLinkFormVoucher.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WrapControl\MTreePaging.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WrapControl\MGridLookUpEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WrapControl\MGridPaging.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WrapControl\MSearchLookUpEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WrapControl\MStandaloneBarDockControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WrapControl\MDateRange.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WrapControl\MTreeLookUpEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WrapControl\MUploadImage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WrapControl\MDXMenuItem.cs" />
+    <Compile Include="WrapControl\CustomToolStripRender.cs" />
+    <Compile Include="WrapControl\MGridEditable.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WrapControl\MGridEditable.Designer.cs">
+      <DependentUpon>MGridEditable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WrapControl\MGridViewInfoRegistrator.cs" />
+    <Compile Include="WrapControl\MPictureEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WrapControl\MFormBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WrapControl\MFormQuickSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WrapControl\MPopupContainerControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WrapControl\MComboBoxTree.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WrapControl\MAccordionControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WrapControl\MBindingSource.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WrapControl\MToolbarList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WrapControl\MBarManager.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WrapControl\MGroupControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WrapControl\MNavBarControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WrapControl\MXtraPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WrapControl\MRibbonStatusBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WrapControl\MRibbonControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WrapControl\MTileNavPane.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WrapControl\MGridControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WrapControl\MXtraTabbedMdiManager.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WrapControl\MXtraTabControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WrapControl\MPopupMenu.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WrapControl\MSplitContainerControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WrapControl\MXtraUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WrapControl\MLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WrapControl\MLayoutControlItem.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WrapControl\MToolbar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WrapControl\MLayoutControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WrapControl\MSimpleButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WrapControl\MBarButtonItem.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WrapControl\MTreeView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WrapControl\MGridView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WrapControl\MTokenEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WrapControl\MDxValidationProvider.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WrapControl\MListBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WrapControl\MDropDownButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WrapControl\MCheckComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WrapControl\MCalculator.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WrapControl\MHyperlink.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WrapControl\MRadioGroup.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WrapControl\MMemoEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WrapControl\MImageComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WrapControl\MComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WrapControl\MPopupContainerEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WrapControl\MLookUpEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WrapControl\MTimeEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WrapControl\MDateEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WrapControl\MSpinEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WrapControl\MCheckBoxEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WrapControl\MButtonEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WrapControl\MTextEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WrapControl\MPagingGridControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WrapControl\MPagingGridControl.Designer.cs">
+      <DependentUpon>MPagingGridControl.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WrapControl\MDataNavigatorPaging.resx">
+      <DependentUpon>MDataNavigatorPaging.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WrapControl\MTreeLookUpEdit.resx">
+      <DependentUpon>MTreeLookUpEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WrapControl\MTreePaging.resx">
+      <DependentUpon>MTreePaging.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WrapControl\MDateRange.resx">
+      <DependentUpon>MDateRange.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WrapControl\MGridPaging.resx">
+      <DependentUpon>MGridPaging.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WrapControl\MSearchLookUpEdit.resx">
+      <DependentUpon>MSearchLookUpEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WrapControl\MUploadImage.resx">
+      <DependentUpon>MUploadImage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WrapControl\MComboBoxTree.resx">
+      <DependentUpon>MComboBoxTree.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WrapControl\MFormBase.resx">
+      <DependentUpon>MFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WrapControl\MFormQuickSearch.resx">
+      <DependentUpon>MFormQuickSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WrapControl\MGridEditable.resx">
+      <DependentUpon>MGridEditable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WrapControl\MToolbarList.resx">
+      <DependentUpon>MToolbarList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WrapControl\MGridControl.resx">
+      <DependentUpon>MGridControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WrapControl\MXtraUserControl.resx">
+      <DependentUpon>MXtraUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WrapControl\MGridView.resx">
+      <DependentUpon>MGridView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WrapControl\MToolbar.resx">
+      <DependentUpon>MToolbar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WrapControl\MPagingGridControl.resx">
+      <DependentUpon>MPagingGridControl.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Image\btnAdd.png" />
+    <Content Include="Lib\Newtonsoft.Json.dll" />
+    <None Include="Resources\clear.png" />
+    <None Include="Resources\reject.png" />
+    <None Include="Resources\approve.png" />
+    <None Include="Resources\approval.png" />
+    <None Include="Resources\Cancel_16x16.png" />
+    <None Include="Resources\AddItem_16x16.png" />
+    <None Include="Resources\SaveAndNew_16x16.png" />
+    <None Include="Resources\Save_16x16.png" />
+    <None Include="Resources\Filter_16x16.png" />
+    <None Include="Resources\Paste_16x16.png" />
+    <None Include="Resources\Edit_16x16.png" />
+    <None Include="Resources\Copy_16x16.png" />
+    <None Include="Resources\Clear_16x16.png" />
+    <None Include="Resources\Close_16x16.png" />
+    <None Include="Resources\Add_16x16.png" />
+    <None Include="Resources\Show_16x16.png" />
+    <None Include="Resources\Reset2_16x16.png" />
+    <None Include="Resources\Refresh_16x16.png" />
+    <None Include="Resources\DeleteList_16x16.png" />
+    <None Include="Resources\Apply_16x16.png" />
+    <None Include="Resources\quick-add1.png" />
+    <None Include="Resources\quick-add.png" />
+    <None Include="Resources\btnSave.png" />
+    <None Include="Resources\SaveAdd.png" />
+    <None Include="Resources\elcms.ico" />
+    <None Include="Image\btnAddQuickSearch.png" />
+    <Content Include="Image\btnCancel.png" />
+    <Content Include="Image\btnDel.png" />
+    <Content Include="Image\btnEdit.png" />
+    <Content Include="Image\btnExit.png" />
+    <Content Include="Image\btnHelp.png" />
+    <Content Include="Image\btnOK.png" />
+    <Content Include="Image\btnPrint.png" />
+    <Content Include="Image\btnSave.png" />
+    <None Include="Image\close.png" />
+    <None Include="Image\btnSearch.png" />
+    <None Include="Image\btnWatch.png" />
+    <None Include="Image\duplucate.png" />
+    <None Include="Image\iconwarning.png" />
+    <Content Include="Image\pass.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MT.Library\MT.Library.csproj">
+      <Project>{BFEA1F2C-0ADC-42F1-B334-381DBF8BDAC9}</Project>
+      <Name>MT.Library</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
